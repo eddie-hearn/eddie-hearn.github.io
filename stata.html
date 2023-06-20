@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddie Hearn | Stata Commands</title>
+<STYLE TYPE="text/css">
+<!--
+BODY
+    {
+    padding-top: 2%;  
+    padding-bottom: 10%;    
+    padding-left: 7%;
+    padding-right: 7%;
+	background-color: #C0C0C0;
+    }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: blue;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+file {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
+
+</style>
+<header>
+  <h1 align="center">Introduction to Stata</h1>
+</header>
+<body>
+
+<h1>1. Where am I?</h1>
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.1 <a href="https://www.stata.com/manuals13/dcd.pdf"> pwd</a> </td>
+        <td style="width:50%"> [prints working directory] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.2. <a href="https://www.stata.com/manuals/dmkdir.pdf"> mkdir</a> <em>name</em> </td>
+        <td style="width:50%">[creates new directory <em>name]</td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.3. <a href="https://www.stata.com/manuals/dcd.pdf"> cd</a> <em>directory_path</em> </td>
+        <td style="width:50%">[move to <em>directory</em>]</td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.4. <a href="https://www.stata.com/manuals/ddir.pdf"> ls</a> </td>
+        <td style="width:50%">[displays available files in current directory]</td> 
+    </tr>
+</table>
+<p>To check your working directory just type: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>pwd</code> &nbsp &nbsp <mark>Press "enter" to run the command after each line.</mark></p>
+
+<p>Let's move to home directory and print working directory. Type:</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>cd</code> ~/ <br> &nbsp &nbsp  <code>pwd</code> </p>
+
+<p>Now let's make a directory called 'fys' and move into that directory. And verify our location. Type:</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>mkdir</code> fys <br> &nbsp &nbsp  <code>cd</code> fys <br> &nbsp &nbsp <code>pwd</code> </p>
+
+<h1>2. Importing data</h1>
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.1. <a href="https://www.stata.com/manuals13/dimportdelimited.pdf"> import</a> <em>type</em> <em>file_name</em>, varn(<em>#</em>)</td>
+        <td style="width:50%"> [loads data, indicates row of variable names - often 1] </td> 
+    </tr>
+</table>
+
+<p>Download the current data from the <a href="https://www.mortality.org/File/GetDocument/Public/STMF/Outputs/stmf.csv"> Human Mortality Database</a></p>
+
+<p>To verify your csv file is in the current working directory type:</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>ls</code></p>
+
+<p>To import a comma delimited file (.csv) we simply use "delim" our file name is "stmf.csv" and the variable names are in row 3. To import the data, type:</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>import</code> delim <file>"stmf.csv"</file>, varn(3)  &nbsp &nbsp <mark>You can cut and paste with ctrl+c and ctrl+v.</mark></p> 
+
+<h1>3. Viewing data</h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.1. <a href="https://www.stata.com/manuals/ddescribe.pdf"> describe</a>  </td>
+        <td style="width:50%"> [describes loaded data] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.2. ctrl+8  </td>
+        <td style="width:50%"> [shortcut to open data browser] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.3. <a href="https://www.stata.com/manuals/rsummarize.pdf"> sum</a> <em>variable</em> </td>
+        <td style="width:50%"> [summarizes <em>variable</em>] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.4. <a href="https://www.stata.com/manuals/rtabulateoneway.pdf"> tab</a> <em>variable</em> </td>
+        <td style="width:50%"> [produces 1-way table of <em>variable</em> ] </td> 
+    </tr>
+</table>
+
+<p> To see the countries in the data, type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>tab</code> countrycode </p>
+
+<h1>4. Manipulating data</h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.1. <a href="https://www.stata.com/manuals/ddrop.pdf"> drop</a> <em>variable</em>  </td>
+        <td style="width:50%"> [deletes <em>variable</em>] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.2. <a href="https://www.stata.com/manuals13/u11.pdf#u11.1.3ifexp"> if</a> </td>
+        <td style="width:50%"> [specifies a conditional statement] </td> 
+    </tr>
+</table>
+
+<p> We have missing data in Russia. We can drop Russia from our data using the "if" command. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>drop if</code> countrycode==<file>"RUS"</file> </p>
+
+<h1>5. Visualizing data</h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.1. <a href="https://www.stata.com/support/faqs/graphics/gph/graphdocs/line-graph/"> line</a> <em>y-variable</em>  <em> x-variable</em>  </td>
+        <td style="width:50%"> [creates line graph *line is just one type of graph you can make] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.2. <a href="https://www.stata.com/manuals/g-2graphtwowayline.pdf"> twoway</a> (<em>graph_1</em>) (<em>graph_n</em>) </td>
+        <td style="width:50%"> [combine multiple graphs] </td> 
+    </tr>
+</table>
+
+<p> Now using what we have learned we can summarize total deaths in the US the year before Covid (2019) and make a basic line graph. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>sum</code> dtotal <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>  <br>    
+    &nbsp &nbsp  <code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file> <br>
+    &nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)  </p>
+
+<p> Let's add the 5 years prior to covid and the covid years to our graph.  Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2015 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2016 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2017 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2018 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2021 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2022 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) </p>
+
+<p> This is a little difficult to understand. Let's change the non covid years to gray and add a legend so we know which year is which. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2015 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2016 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2017 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2018 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2021 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2022 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>),  title("Total Deaths") ytitle("Deaths") legend( order(6 "2020" 7 "2021" 8 "2022")) </p>
+
+<p> Of course we can make our graph a little prettier. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2015 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2016 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2017 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2018 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2021 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2022 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>),  title("Weekly Deaths USA (2015-2022)") ytitle("Deaths") legend(<code>order</code>(5 <file>"2015-2019"</file> 6 <file>"2020"</file> 7 <file>"2021"</file> 8 <file>"2022"</file>) col(4)) xlabel(.3 <file>"Jan"</file> 4.3 <file>"Feb"</file> 8.6 <file>"Mar"</file> 12.9 <file>"Apr"</file> 17.3 <file>"May"</file> 21.6 <file>"Jun"</file> 25.9 <file>"Jul"</file> 30.2 <file>"Aug"</file> 34.5 <file>"Sep"</file> 38.8 <file>"Oct"</file> 43.1 <file>"Nov"</file> 47.4 <file>"Dec"</file>, ang(45))
+</p>
+
+<p> And we can check if 2023 is improving by adding the available data for the first half of the year. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2015 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2016 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2017 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray))(<code>line</code> dtotal week <code>if</code> year == 2018 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>, lcolor(gray)) (<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2021 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2022 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>) (<code>line</code> dtotal week <code>if</code> year == 2023 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>),  title("Weekly Deaths USA (2015-2023)") ytitle("Deaths" " ") legend(<code>order</code>(5 <file>"2015-19"</file> 6 <file>"2020"</file> 7 <file>"2021"</file> 8 <file>"2022"</file> 9 <file>"2023"</file>) col(5)) xlabel(.3 <file>"Jan"</file> 4.3 <file>"Feb"</file> 8.6 <file>"Mar"</file> 12.9 <file>"Apr"</file> 17.3 <file>"May"</file> 21.6 <file>"Jun"</file> 25.9 <file>"Jul"</file> 30.2 <file>"Aug"</file> 34.5 <file>"Sep"</file> 38.8 <file>"Oct"</file> 43.1 <file>"Nov"</file> 47.4 <file>"Dec"</file>, ang(45))
+</p>
+
+<h1>6. Comparing data</h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">6.1. <a href="https://www.stata.com/manuals/pdisplay.pdf"> display</a> </td>
+        <td style="width:50%"> [displays output - can be used as a calculator] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">6.2. <a href="https://www.stata.com/manuals/rttest.pdf"> ttesti</a> <em>obs_1 mean_1 sd_1 obs_2 mean_2 sd_2</em>  </td>
+        <td style="width:50%"> [conducts 2-way ttest] </td> 
+    </tr>
+</table>
+
+<p> Let's comopare death rates in the US in 2020 (observed) to the averge deaths from 2014-2019 (expected) and test if they are statistically different. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>sum</code> rtotal <code>if</code> sex ==<file>"b"</file>  & countrycode == <file>"USA"</file> & year >2014 & year < 2020  <br>
+      &nbsp &nbsp  <code>sum</code> rtotal <code>if</code> sex ==<file>"b"</file>  & countrycode == <file>"USA"</file> & year == 2020 <br>
+      &nbsp &nbsp <code>ttesti</code>    53     .010205    .0012113  260    .0085866    .0005365 </p>
+
+<p> Now we can calculate excess deaths. We just need to multiply the difference in the expected and observed death rate (.001684) by the population 331,002,651. We can use the 95% confidence interval to caluculate high and low estimates. Type: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>display</code> .0016184 * 331002651  <br>
+      &nbsp &nbsp  <code>display</code> .0014119   * 331002651 <br>
+      &nbsp &nbsp    <code>display</code> .0018249 * 331002651 </p>
+
+<p> ***US reported 375,546 total covid-19 death on Jan. 1 2021*** </p>
+
+<h1>7. Try it</h1> 
+
+<p> Choose a country from the dataset other than the US. Create a graph of your country's weekly deaths from 2015-2022. Awnser the questions on the handout. After you finish, type the following into stata: </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>clear</code> <br>
+      &nbsp &nbsp <code>do</code> loop </p>
+
+
+<p> Find your country name.log and name.svg in the folder "reports". Check your answers. </p>
+</body>
+</html>
