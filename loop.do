@@ -102,7 +102,7 @@ foreach c in `code' {						// loop for each country
                 legend(order(5 "2015-2019" 6 "2020" 7 "2021" 8 "2022" 9 "2023") col(5)) ///
                 xlabel(.3 "Jan" 4.3 "Feb" 8.6 "Mar" 12.9 "Apr" 17.3 "May" 21.6 "Jun" 25.9 "Jul" 30.2 "Aug" 34.5 "Sep" /// 
                     38.8 "Oct" 43.1 "Nov" 47.4 "Dec", ang(45))
-    graph export "`c'.svg", replace
+    graph export "`c'.png", replace
 
     log close `c'
 	}

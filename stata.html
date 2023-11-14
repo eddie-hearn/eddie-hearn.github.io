@@ -111,15 +111,11 @@ file {
         <td style="width:50%"> [describes loaded data] </td> 
     </tr>
     <TR ALIGN="left">
-        <td style="width:30%">3.2. ctrl+8  </td>
-        <td style="width:50%"> [shortcut to open data browser] </td> 
-    </tr>
-    <TR ALIGN="left">
-        <td style="width:30%">3.3. <a href="https://www.stata.com/manuals/rsummarize.pdf"> sum</a> <em>variable</em> </td>
+        <td style="width:30%">3.2. <a href="https://www.stata.com/manuals/rsummarize.pdf"> sum</a> <em>variable</em> </td>
         <td style="width:50%"> [summarizes <em>variable</em>] </td> 
     </tr>
     <TR ALIGN="left">
-        <td style="width:30%">3.4. <a href="https://www.stata.com/manuals/rtabulateoneway.pdf"> tab</a> <em>variable</em> </td>
+        <td style="width:30%">3.3. <a href="https://www.stata.com/manuals/rtabulateoneway.pdf"> tab</a> <em>variable</em> </td>
         <td style="width:50%"> [produces 1-way table of <em>variable</em> ] </td> 
     </tr>
 </table>
@@ -164,11 +160,16 @@ file {
         <td style="width:30%">5.2. <a href="https://www.stata.com/manuals/g-2graphtwowayline.pdf"> twoway</a> (<em>graph_1</em>) (<em>graph_n</em>) </td>
         <td style="width:50%"> [combine multiple graphs] </td> 
     </tr>
+     <TR ALIGN="left">
+        <td style="width:30%">5.3. <a href="https://www.stata.com/manuals/g-2setscheme.pdf"> set scheme </a> (<em>scheme name</em>) </td>
+        <td style="width:50%"> [set the graphics scheme to be used] </td> 
+    </tr>
 </table>
 
 <p> Now using what we have learned we can summarize total deaths in the US the year before Covid (2019) and make a basic line graph. Type: </p>
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>sum</code> dtotal <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>  <br>    
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>sum</code> dtotal <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>  <br> 
+	&nbsp &nbsp  <code>set scheme</code> s1color    <br>
     &nbsp &nbsp  <code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file> <br>
     &nbsp &nbsp <code>twoway</code> (<code>line</code> dtotal week <code>if</code> year == 2019 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)(<code>line</code> dtotal week <code>if</code> year == 2020 & sex == <file>"b"</file> & countrycode==<file>"USA"</file>)  </p>
 
@@ -207,17 +208,17 @@ file {
     </tr>
 </table>
 
-<p> Let's compare death rates in the US in 2020 (observed) to the averge deaths from 2014-2019 (expected) and test if they are statistically different. Type: </p>
+<p> Let's comopare death rates in the US in 2020 (observed) to the averge deaths from 2014-2019 (expected) and test if they are statistically different. Type: </p>
 
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>sum</code> rtotal <code>if</code> sex ==<file>"b"</file>  & countrycode == <file>"USA"</file> & year >2014 & year < 2020  <br>
       &nbsp &nbsp  <code>sum</code> rtotal <code>if</code> sex ==<file>"b"</file>  & countrycode == <file>"USA"</file> & year == 2020 <br>
-      &nbsp &nbsp <code>ttesti</code>    53     .010205    .0012113  260    .0085866    .0005365 </p>
+      &nbsp &nbsp <code>ttesti</code>      53     .010187    .0012105   260    .0085809    .0005351 </p>
 
 <p> Now we can calculate excess deaths. We just need to multiply the difference in the expected and observed death rate (.001684) by the population 331,002,651. We can use the 95% confidence interval to caluculate high and low estimates. Type: </p>
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>display</code> .0016184 * 331002651  <br>
-      &nbsp &nbsp  <code>display</code> .0014119   * 331002651 <br>
-      &nbsp &nbsp    <code>display</code> .0018249 * 331002651 </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">&nbsp &nbsp  <code>display</code> .0016061 * 331002651  <br>
+      &nbsp &nbsp  <code>display</code> .0013999    * 331002651 <br>
+      &nbsp &nbsp    <code>display</code> .0018123 * 331002651 </p>
 
 <p> ***US reported 375,546 total covid-19 death on Jan. 1 2021*** </p>
 
@@ -229,6 +230,6 @@ file {
       &nbsp &nbsp <code>do</code> loop </p>
 
 
-<p> Find your country name.log and name.svg in the folder "reports". Check your answers. </p>
+<p> Find your country name.log and name.png in the folder "reports". Check your answers. </p>
 </body>
 </html>
