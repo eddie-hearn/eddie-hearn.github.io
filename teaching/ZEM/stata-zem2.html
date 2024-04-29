@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddie Hearn | Data Analysis 2</title>
+<STYLE TYPE="text/css">
+<!--
+BODY
+    {
+    padding-top: 2%;  
+    padding-bottom: 10%;    
+    padding-left: 7%;
+    padding-right: 7%;
+	background-color: #C0C0C0;
+    }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: blue;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+file {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
+
+</style>
+<header>
+  <h1 align="center">Data analysis 2</h1>
+</header>
+<body>
+
+
+
+
+<h1>1. Basic loop </h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.1. <a href="https://www.stata.com/manuals/pmacro.pdf"> local</a> <em>macro-name</em>  <em>value</em></td>
+        <td style="width:50%"> [ stores <em>value</em> under <em>macro-name</em> ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.2. <a href="https://www.stata.com/manuals13/psleep.pdf"> sleep</a> <em>milliseconds</em> </td>
+        <td style="width:50%"> [ wait <em>milliseconds</em> before executing next command ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.3. <a href="https://www.stata.com/manuals13/pwhile.pdf"> while</a> <em>expression</em> </td>
+        <td style="width:50%"> [ executes command if <em>expression</em> is true] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.4. <a href="https://www.stata.com/manuals13/pforvalues.pdf"> forvalues</a> <em>macro-name</em> =  <em>range</em></td>
+        <td style="width:50%"> [ executes command if value of <em>macro</em> is in <em>range</em> ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.5. <a href="https://www.stata.com/manuals13/pforeach.pdf"> foreach</a> <em>macro-name</em> =  <em>list</em></td>
+        <td style="width:50%"> [ executes command for each element of <em>macro</em> ] </td> 
+    </tr>
+</table>
+
+<p>Make a local macro using a string (words): </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> name <file>"John"</file></p>
+
+<p>Print local macro "name": </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"`name'"</file></p>
+
+<p>Make a local macro using numbers: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> age = 31</p>
+
+<p>Print local macro age: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>`age'</file></p>
+
+<p>Print both local macro: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"`name' is `age' years old"</file></p>
+
+<h2>A. Basic loop using while true</h2>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local i = 1 </code> </p> <mark>counter set to 1</mark>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>while</code>  <file>`i'</file>< 10 {  <br>
+&nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
+&nbsp &nbsp<code> local</code> i = <file>`i'</file>+ 1<br>
+&nbsp &nbsp<code> sleep</code> 1000<br>
+&nbsp &nbsp }</p>
+    
+<h2>B. Basic loop using forvalues</h2>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>forvalues</code>  i = 1/10 {  <br>
+&nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
+&nbsp &nbsp<code> sleep</code> 1000<br>
+&nbsp &nbsp }</p>
+
+<p>Counting by 2: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>forvalues</code>  i = 1(2)10 {  <br>
+&nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
+&nbsp &nbsp<code> sleep</code> 1000<br>
+&nbsp &nbsp }</p>
+
+<h2>C. Basic loop using foreach</h2>
+<p>Create list of juice </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> juice <file>"apple orange grape"</file></p>
+<p>loop over each element of list "juice" </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>foreach</code>  i in <file>`juice'</file>  {  <br>
+&nbsp &nbsp<code> display</code> <file>"`i' juice"</file><br>
+&nbsp &nbsp<code> sleep</code> 1000<br>
+&nbsp &nbsp }</p>
+
+</body>
+</html>
