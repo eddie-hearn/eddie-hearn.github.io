@@ -23,7 +23,8 @@ foreach i in `juice' {
     display "`i' juice" // here is another example of a comment
 }
 
-/// or if you wanted to make a comment
-    on multiple lines
+display /// if you wanted to make a comment and join the next line with this one
+"here is a comment"
+    
 
 log close
