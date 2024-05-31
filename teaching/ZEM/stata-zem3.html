@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eddie Hearn | Data Analysis 3</title>
+<STYLE TYPE="text/css">
+<!--
+BODY
+    {
+    padding-top: 2%;  
+    padding-bottom: 10%;    
+    padding-left: 7%;
+    padding-right: 7%;
+	background-color: #C0C0C0;
+    }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: blue;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+file {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
+
+</style>
+<header>
+  <h1 align="center">Data analysis 3</h1>
+</header>
+<body>
+
+
+
+
+<h1>3. Do-files </h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.1. <a href="https://www.stata.com/manuals13/u16.pdf"> do</a> <em>filename</em> </td>
+        <td style="width:50%"> [ runs commands in file.do ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.2. <a href="https://www.stata.com/manuals13/rlog.pdf"> log</a> using <em>filename</em>, replace </td>
+        <td style="width:50%"> [ makes a full record of your Stata session ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.3. <a href="https://www.stata.com/manuals/rdoedit.pdf"> doedit</a> </td>
+        <td style="width:50%"> [ opens do-file editor ] </td> 
+    </tr>
+</table>
+
+<p> Do-files are are text files that contain commands that can be executed by Stata (they end with .do). There are 3 ways you can use Stata. First, you can use the drop down menus. This may seem easier when you are beginning but there are a lot of limitations to this method. Second, you can enter commands directly into the command prompt has we have been doing in class. The third and prefered way, however, is to use a do-file. A do-file allows you to reproduce your work in the future. It also means you don't have to start from scratch each time you open Stata. You can save your do-file close Stata and go home without worrying about losing your progress.</p>
+
+<p> You can create a do-file using any text editor on your computer or you can use the built-in do-file editor in Stata (ctrl+9 or command <code>doedit</code>)</p>
+
+<p> When you use a do-file it is important that you provide clear infomration about what the do-file's purpose. It is also important that you use relative file paths. If you use absolute file-paths your do-file will not run on a diffrent computer. Finally make sure you include comments so you can remember why you included specific commands and so that others can follow what you are doing. </p>
+
+<p> There are 4 ways you can add comments in your do-file. This means that Stata willl ignore them when running the commands.</p>
+
+<ul>
+    <li> Begin line with * and Stata will ignore the line </li>
+    <li> Place the comment inside /* */ </li>
+    <li> Place the comment after // </li>
+    <li> Place the comment after /// for multiple lines </li>
+</ul>
+
+<p> Stata also allows you to keep a log of your session. It is good practice to start each do-file by opening a log. </p>
+
+<p> Here is an example of a <a href="https://eddie-hearn.github.io/teaching/ZEM/basic.do">basic do-file</a>. After looking at this example, make your own do-file. Make sure you include a log-file, comments, and some command. Also, remember to close your log file after your finished. After you run your do-file, make sure you can find the log-file Stata produced. It will be in your working directory.</p>
+
+
+
+
+
+
+</body>
+</html>
