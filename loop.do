@@ -100,4 +100,20 @@ foreach c in `code' {						// loop for each country
 
 cd ..  
 save covid.dta, replace
-exit, STATA clear
+
+if c(os)=="Windows" {
+display "WINDOWS OS detected"
+capture winexec start reports
+}
+
+if c(os)=="MacOSX" {
+display "MAC OS detected"
+capture winexec open reports
+}
+
+if c(os)=="Unix" {
+display "LINUX OS detected"
+capture winexec xdg-open reports
+}
+
+log close covid
