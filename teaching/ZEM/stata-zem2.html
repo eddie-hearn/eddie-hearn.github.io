@@ -2,9 +2,39 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eddie Hearn | Data Analysis 2</title>
+
+<title>Eddie Hearn | Data Analysis 2 </title>
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<meta charset="utf-8">
+  <meta name="description" content="Data analysis">
+  <meta name="keywords" content="political science, international relations, academic research, Stata, programming">
+  <meta name="author" content="Eddie Hearn">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <STYLE TYPE="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 <!--
 BODY
     {
@@ -39,14 +69,20 @@ file {
 
 </style>
 <header>
-  <h1 align="center">Data analysis 2</h1>
+  <h1 align="center">Data analysis 2 (Basic loop)</h1>
 </header>
 <body>
+<ul>
+  <li><a class="active" href="seminar.html">Seminar Home</a></li>
+  <li><a href="stata-zem1.html"">Previous (Introduction) </a></li>
+  <li><a href="#macros">Local macros </a></li>
+  <li><a href="#true">While true loop</a></li>
+  <li><a href="#values">Forvalues loop</a></li>
+  <li><a href="#each">Foreach loop</a></li>
+  <li><a href="stata-zem3.html"">Next (Do-files) </a></li>
+</ul>
 
-
-
-
-<h1>2. Basic loop </h1> 
+<h1 id="macros">Macros </h1> 
 
 <table border="0" WIDTH="100%" >
     <TR ALIGN="left">
@@ -90,7 +126,7 @@ file {
 <p>Print both local macro: </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"`name' is `age' years old"</file></p>
 
-<h2>A. Basic loop using while true</h2>
+<h2 id="true">Basic loop using while true</h2>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local i = 1 </code> </p> <mark>counter set to 1</mark>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>while</code>  <file>`i'</file>< 10 {  <br>
 &nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
@@ -98,7 +134,7 @@ file {
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
     
-<h2>B. Basic loop using forvalues</h2>
+<h2 id="values">Basic loop using forvalues</h2>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>forvalues</code>  i = 1/10 {  <br>
 &nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
 &nbsp &nbsp<code> sleep</code> 1000<br>
@@ -110,7 +146,7 @@ file {
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
 
-<h2>C. Basic loop using foreach</h2>
+<h2 id="each">Basic loop using foreach</h2>
 <p>Create list of juice </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> juice <file>"apple orange grape"</file></p>
 <p>loop over each element of list "juice" </p>

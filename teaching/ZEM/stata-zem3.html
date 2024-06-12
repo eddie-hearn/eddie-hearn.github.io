@@ -2,9 +2,37 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Eddie Hearn | Data Analysis 3</title>
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<meta charset="utf-8">
+  <meta name="description" content="Data analysis">
+  <meta name="keywords" content="political science, international relations, academic research, Stata, programming">
+  <meta name="author" content="Eddie Hearn">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <STYLE TYPE="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a  {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
 <!--
 BODY
     {
@@ -43,8 +71,10 @@ file {
 </header>
 <body>
 
-
-
+<ul>
+  <li><a class="active" href="seminar.html">Seminar Home</a></li>
+  <li><a href="stata-zem2.html"">Previous (Loops) </a></li>
+</ul>
 
 <h1>3. Do-files </h1> 
 
@@ -75,12 +105,10 @@ file {
 
 <p> There are 4 ways you can add comments in your do-file. This means that Stata will ignore them when running the commands.</p>
 
-<ul>
-    <li> Begin line with * and Stata will ignore the line </li>
-    <li> Place the comment inside /* */ </li>
-    <li> Place the comment after // </li>
-    <li> Place the comment after /// to join the next line with the current one </li>
-</ul>
+    <p>&emsp;&emsp;&#8226; Begin line with * and Stata will ignore the line <br>
+     &emsp;&emsp;&#8226; Place the comment inside /* */ <br>
+     &emsp;&emsp;&#8226; Place the comment after // <br>
+    &emsp;&emsp;&#8226; Place the comment after /// to join the next line with the current one </p> 
 
 <p> Stata also allows you to keep a log of your session. It is good practice to start each do-file by opening a log. </p>
 

@@ -103,7 +103,7 @@ save covid.dta, replace
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
-capture winexec start reports
+capture winexec explorer.exe reports
 }
 
 if c(os)=="MacOSX" {
