@@ -16,7 +16,7 @@ clear
 cd ~/
 capture mkdir zemi
 cd zemi
-mkdir data
+capture mkdir data
 
 use https://eddie-hearn.github.io/teaching/ZEM/data/births-per
 save births-per, replace
