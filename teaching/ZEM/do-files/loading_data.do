@@ -19,7 +19,7 @@ cd zemi
 mkdir data
 
 use https://eddie-hearn.github.io/teaching/ZEM/data/births-per
-save save births-per, replace
+save births-per, replace
 export excel using "births-per", firstrow(variables) replace
 export delim using "births-per.csv", replace
 
