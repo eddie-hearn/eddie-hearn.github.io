@@ -92,8 +92,8 @@ file {
         <td style="width:50%"> [ loads a text delimited data file] </td> 
     </tr>
     <TR ALIGN="left">
-        <td style="width:30%">4.3. <a href="https://www.stata.com/manuals/dimportexcel.pdf"> import</a> excel <em>filename</em>, firstrow(variables)</td>
-        <td style="width:50%"> [ loads an Excel data file and treats first row as variable names ] </td> 
+        <td style="width:30%">4.3. <a href="https://www.stata.com/manuals/dimportexcel.pdf"> import</a> excel <em>filename</em>, <em>variable name row</em></td>
+        <td style="width:50%"> [ loads an Excel data file and sets the row to used as variable names (often first) ] </td> 
     </tr>
 </table>
 
@@ -127,7 +127,7 @@ file {
 <p>We can open the Excel file (.xlsx) with the <code>import excel</code> command. We will also need to specify that the first row is variable names when working with an excel file.</p>
 
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>clear</code> <br>
-&nbsp &nbsp  <code>import</code> excel <file>births-per.xlsx</file>, firstrow(variables)</p>
+&nbsp &nbsp  <code>import</code> excel <file>births-per.xlsx</file>, first</p>
 
 </body>
 </html>
