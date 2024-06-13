@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Eddie Hearn | Data Analysis 4</title>
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<meta charset="utf-8">
+  <meta name="description" content="Data analysis">
+  <meta name="keywords" content="political science, international relations, academic research, Stata, programming">
+  <meta name="author" content="Eddie Hearn">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<STYLE TYPE="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a  {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+<!--
+BODY
+    {
+    padding-top: 2%;  
+    padding-bottom: 10%;    
+    padding-left: 7%;
+    padding-right: 7%;
+	background-color: #C0C0C0;
+    }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: blue;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+file {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
+
+</style>
+<header>
+  <h1 align="center">Data analysis 4 (Loading Data)</h1>
+</header>
+<body>
+
+<ul>
+  <li><a class="active" href="seminar.html">Seminar Home</a></li>
+  <li><a href="stata-zem3.html"">Previous (Do-files) </a></li>
+</ul>
+
+<h1>4. Loading data </h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.1. <a href="https://www.stata.com/manuals/duse.pdf"> use</a> <em>data</em> </td>
+        <td style="width:50%"> [ loads a Stata format data set (.dta) ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.2. <a href="https://www.stata.com/manuals13/dimportdelimited.pdf"> import</a> delim <em>filename</em></td>
+        <td style="width:50%"> [ loads a text delimited data file] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.3. <a href="https://www.stata.com/manuals/dimportexcel.pdf"> import</a> excel <em>filename</em>, firstrow(variables)</td>
+        <td style="width:50%"> [ loads an Excel data file and treats first row as variable names ] </td> 
+    </tr>
+</table>
+
+<p>Now that you know how to use Stata the next step is loading data. We will focus on the 3 most common types of data you will encounter. </p>
+
+<p>&emsp;&emsp;&#8226; Stata formatted data (.dta files) <br>
+     &emsp;&emsp;&#8226; Text delimited files (commonly .csv files) <br>
+     &emsp;&emsp;&#8226; Microsoft Excel files (.xlsx files) </p> 
+
+<p> Of course you can open many other types of files, but the above 3 are the most likely for you to encounter in the beginning.</p>
+
+<p> The most difficult part of loading data is understanding your working directory and the path to the data. In order for your do-file to work on different machines it is important to use relative paths to open files. Let's download some data files into your working directory. Type:
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>do</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/do-files/loading_data" </file></p>
+
+<p> This will run the do-file <file>"loading-data"</file> which will place some data files on your computer in a new working directory name <file>"data"</file>. The directory will open automatically in a window so you can verify the files are on your computer. You can also check your working directory in Stata with the command <code>pwd</code> and view available files with the command <code>ls</code>. </p>
+
+<p> The easiest file to open is a Stata formatted .dta file. You simply use the <code>use</code> command and the <em>filename</em>. You do not need to type .dta as that is the default extension.  </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>use</code> <file>births-per </file></p>
+
+<h2> *** If there are spaces in your filename, you need to put it inside " " ***</h2>
+
+<p>If we want to open the coma delimited file (.csv), we use the <code>import delim</code> command and the full <em>filename</em>. </p>
+
+<h2> *** To open a new dataset, you have to "clear" any loaded datasets, use the <code>clear</code> command ***</h2>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>clear</code> <br>
+&nbsp &nbsp  <code>import</code> delim <file>births-per.csv </file></p>
+
+<p>We can open the Excel file (.xlsx) with the <code>import excel</code> command. We will also need to specify that the first row is variable names when working with an excel file.</p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>clear</code> <br>
+&nbsp &nbsp  <code>import</code> excel <file>births-per.xlsx</file>, firstrow(variables)</p>
+
+</body>
+</html>
