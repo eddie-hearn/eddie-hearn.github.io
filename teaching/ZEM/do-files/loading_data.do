@@ -19,9 +19,9 @@ cd zemi
 capture mkdir data
 
 use https://eddie-hearn.github.io/teaching/ZEM/data/births-per
-save births-per, replace
-export excel using "births-per", firstrow(variables) replace
-export delim using "births-per.csv", replace
+save data/births-per, replace
+export excel using "data/births-per", firstrow(variables) replace
+export delim using "data/births-per.csv", replace
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
