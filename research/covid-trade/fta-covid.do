@@ -52,8 +52,8 @@ outreg2 using ols-truncated , tex ctitle(Model 3) append drop(i.origin i.destina
 reg ln_ex_tr ln_gdp_o ln_gdp_d ln_dist contig col_dep_ever comcol comlang_off  wto CU FTA covid cov_wto i.origin i.destination, cluster(country_pair)
 outreg2 using ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destination)
 
-save clean-trade.dta, replace
-cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do fta-covid.do, replace
+capture  save clean-trade.dta, replace
+capture  cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do fta-covid.do, replace
 
 cd ..
 
@@ -73,3 +73,7 @@ capture winexec xdg-open replication
 }
 
 log close covid
+
+capture cp fta-covid.log replication/fta-covid.log, replace
+capture rm fta-covid.log
+
