@@ -53,7 +53,7 @@ reg ln_ex_tr ln_gdp_o ln_gdp_d ln_dist contig col_dep_ever comcol comlang_off  w
 outreg2 using ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destination)
 
 save clean-trade.dta, replace
-save fta-covid.do, replace
+cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do fta-covid.do, replace
 
 cd ..
 
