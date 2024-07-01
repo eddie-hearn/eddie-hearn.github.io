@@ -3,11 +3,11 @@ log using fta-covid.log, replace name(covid)
 
 *  ***************************************************************** *
 *  ***************************************************************** *
-*     File-Name:   fta-covid.do                                    *
+*     File-Name:   fta-covid.do                                      *
 *     Author:      Eddie Hearn                                       *
 *     Purpose:     FTAs and shocks                                   *
 *     Input File:  clean-trade.dta                                   *
-*     output:	   ols.tex ols-truncated.tex  replication/           *
+*     output:	   ols.tex ols-truncated.tex  clean-trade.dta        *
 *     Program:	   Stata 17                                          *
 *     OS:		   Debian GNU/Linux                                  *
 *  ****************************************************************  *
@@ -51,6 +51,9 @@ outreg2 using ols-truncated , tex ctitle(Model 3) append drop(i.origin i.destina
 
 reg ln_ex_tr ln_gdp_o ln_gdp_d ln_dist contig col_dep_ever comcol comlang_off  wto CU FTA covid cov_wto i.origin i.destination, cluster(country_pair)
 outreg2 using ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destination)
+
+save clean-trade.dta, replace
+save fta-covid.do, replace
 
 cd ..
 
