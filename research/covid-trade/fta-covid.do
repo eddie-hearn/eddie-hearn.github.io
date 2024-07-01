@@ -54,4 +54,19 @@ outreg2 using ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destina
 
 cd ..
 
+if c(os)=="Windows" {
+display "WINDOWS OS detected"
+capture winexec explorer.exe replication
+}
+
+if c(os)=="MacOSX" {
+display "MAC OS detected"
+capture winexec open replication
+}
+
+if c(os)=="Unix" {
+display "LINUX OS detected"
+capture winexec xdg-open replication
+}
+
 log close covid
