@@ -90,6 +90,11 @@ gen cov_fta = covid * FTA
 
 save covid/data/covid-trade.dta
 
+*** reduce dataset to speed up outreg2 ***
+preserve
+keep if country_exists_o ==1 & country_exists_d ==1
+keep if year==2019 | year==2020
+
 *** set sample restrictions: UN countries, 2019-2020 ***
 local sample "if country_exists_o ==1 & country_exists_d ==1 & (year==2019 | year==2020)"
 
@@ -134,9 +139,14 @@ outreg2 using covid/results/ols-truncated , tex ctitle(Model 3) append drop(i.or
 reg ln_ex_tr ln_gdp_o ln_gdp_d ln_dist contig col_dep_ever comcol comlang_off  wto CU FTA covid cov_wto i.origin i.destination `sample', cluster(country_pair)
 outreg2 using covid/results/ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destination)
 
-capture  cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do covid/fta-covid.do, replace
-log close covid
+*** restore dataset ***
+restore
 
+*** Transfer do file ***
+capture  cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do covid/fta-covid.do, replace
+
+
+log close covid
 capture cp fta-covid.log covid/fta-covid.log, replace
 capture rm fta-covid.log
 
