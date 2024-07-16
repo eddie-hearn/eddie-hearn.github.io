@@ -79,7 +79,7 @@ reg ln_ex_tr ln_gdp_o ln_gdp_d ln_dist contig col_dep_ever comcol comlang_off  w
 outreg2 using covid/results/ols-truncated , tex ctitle(Model 4) append drop(i.origin i.destination)
 
 capture  cp https://eddie-hearn.github.io/research/covid-trade/fta-covid.do covid/fta-covid.do, replace
-capture  cp https://eddie-hearn.github.io/research/covid-trade/clean-trade.do covid/fta-covid.do, replace
+capture  cp https://eddie-hearn.github.io/research/covid-trade/clean-trade.do covid/clean-trade.do, replace
 
 
 if c(os)=="Windows" {
