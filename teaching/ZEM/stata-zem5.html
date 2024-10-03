@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Eddie Hearn | Data Analysis 5</title>
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<meta charset="utf-8">
+  <meta name="description" content="Data analysis">
+  <meta name="keywords" content="political science, international relations, academic research, Stata, programming">
+  <meta name="author" content="Eddie Hearn">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<STYLE TYPE="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a  {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+<!--
+BODY
+    {
+    padding-top: 2%;  
+    padding-bottom: 10%;    
+    padding-left: 7%;
+    padding-right: 7%;
+	background-color: #C0C0C0;
+    }
+-->
+code {
+  font-family: Consolas,"courier new";
+  color: blue;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+file {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #C0C0C0;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
+
+</style>
+<header>
+  <h1 align="center">Data analysis 5 (Recoding Variables)</h1>
+</header>
+<body>
+
+<ul>
+  <li><a class="active" href="seminar.html">Seminar Home</a></li>
+  <li><a href="stata-zem4.html"">Previous (Loading data) </a></li>
+</ul>
+
+<h1>5. Recoding variables </h1> 
+
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.1. <a href="https://www.stata.com/manuals/drecode.pdf"> recode</a> <em>var list (rule)</em> </td>
+        <td style="width:50%"> [ changes the values of numeric variables according to the rules specified <mark> alters data</mark>] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.2. <a href="https://www.stata.com/manuals13/drename.pdf"> rename </a> <em> old varname new varname</em></td>
+        <td style="width:50%"> [ changes the name of existing variable ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.3. <a href="https://www.stata.com/manuals/dgenerate.pdf"> generate </a> <em>newvar = exp </em></td>
+        <td style="width:50%"> [ creates a new variable. The values of the variable are specified by = exp ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">5.4. <a href="https://www.stata.com/manuals/dgenerate.pdf"> replace </a> <em>varname = exp </em></td>
+        <td style="width:50%"> [  changes the contents of an existing variable <mark> alters data</mark> ] </td> 
+    </tr>
+</table>
+
+<p>Now that you know how to load data. We can begin manipulating variables. First, lets load some data. This is data from my survey about immigration attitudes. It includes a Disgust Sensitivity Scale. To load the data from the we, type:
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>use</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/data/dss-scale.dta" </file></p>
+
+Now that the data is loaded you can view the details of the data. Type:
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>describe</code></p>
+
+We can see that the data set consist of an id variable, some demographic variables (age, gender, education), 5 immigration attitude questions (immig_attitude*), and 5 Disgust Sensitivity Scale items (dss*). First lets consider the "gender" variable. Let's generate a new variable called gender2 that is = to gender.
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>generate</code> gender2 = gender</p>
+
+Since male is set to 1 and female is set to 2, let's recode our variable as 0 and 1. 
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>recode</code> gender2 (2=0)</p>
+
+Finally we can give our variable a better name. Since 1 is male we can name our variable "male". 
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>rename</code> gender2 male</p>
+
+<p> Next we have 5 questions about support for immigration. We can add these questions together to make an index of immigration attitudes. But we have to be careful. " of the variables (immig_attitude2 and immig_attitude4) code negative attitudes as high scores. The other variables code positive values as high scores. First we need to invert the 2 negative questions. </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>sum</code> immig_*</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>replace</code> immig_attitude2 = immig_attitude2*-1</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>sum</code> immig_attitude2</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>replace</code> immig_attitude2 = immig_attitude2+6</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>sum</code> immig_attitude2</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>replace</code> immig_attitude4 = (immig_attitude4*-1)+6</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>sum</code> immig_*</p>
+
+Now we can generate a simple additive index of immigration attitudes named "support".
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>generate</code> support = immig_attitude1 + immig_attitude2 + immig_attitude3 + immig_attitude4 + immig_attitude5 </p>
+
+See if you can make an additive index of the dss items. Call your new variable "DSS"
+
+What do you think predicts individual immigration attitudes. We can run a simple model looking at the effect of age, gender, education, and DSS
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>reg</code> support male educ age DSS</p>
+
+According to our model, what is the best predictor of immigration attitude?
+
+</body>
+</html>
