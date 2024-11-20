@@ -1026,7 +1026,8 @@
 	<line x1="5215.39" y1="557.89" x2="5215.39" y2="493.09" style="stroke:#F0F0F0;stroke-width:9.72"/>
 	<line x1="5215.39" y1="460.69" x2="5215.39" y2="395.89" style="stroke:#F0F0F0;stroke-width:9.72"/>
 	<line x1="5215.39" y1="363.49" x2="5215.39" y2="309.82" style="stroke:#F0F0F0;stroke-width:9.72"/>
-	<path d=" M596.19 2330.10 L773.89 2330.10 L951.41 2330.10 L1129.11 2157.64 L1306.80 2157.64 L1484.49 2157.64 L1662.02 2170.97 L1839.71 2170.97 L2017.41 2050.82 L2195.10 2023.99 L2372.79 2023.99 L2550.32 2023.99 L2728.01 1903.84 L2905.71 1903.84 L3083.40 1930.50 L3260.93 2117.48 L3438.62 2104.14 L3616.31 2104.14 L3794.01 2017.74 L3971.70 2017.74 L4149.23 1977.08 L4326.92 1977.08 L4504.61 1977.08 L4682.31 1990.91 L4860.00 2004.75 L5037.52 1989.56 L5215.22 1961.89" stroke-linejoin="round" style="fill:none;stroke:#1A85FF;stroke-width:9.72"/>
+	<path d=" M5215.22 1180.74 L5037.52 1219.22 L4860.00 1254.15 L4682.31 1257.53 L4504.61 1310.51 L4326.92 1327.73 L4149.23 1354.89 L3971.70 1379.70 L3794.01 1388.48 L3616.31 1432.86 L3438.62 1418.01 L3260.93 1480.28 L3083.40 1490.40 L2905.71 1485.84 L2728.01 1449.73 L2550.32 1473.69 L2372.79 1487.03 L2195.10 1516.89 L2017.41 1541.03 L1839.71 1559.25 L1662.02 1594.86 L1484.49 1521.28 L1306.80 1563.81 L1129.11 1576.29 L951.41 1545.08 L773.89 1596.21" stroke-linejoin="round" style="fill:none;stroke:#1A85FF;stroke-width:9.72"/>
+	<path d=" M5215.22 1961.89 L5037.52 1989.56 L4860.00 2004.75 L4682.31 1990.91 L4504.61 1977.08 L4326.92 1977.08 L4149.23 1977.08 L3971.70 2017.74 L3794.01 2017.74 L3616.31 2104.14 L3438.62 2104.14 L3260.93 2117.48 L3083.40 1930.50 L2905.71 1903.84 L2728.01 1903.84 L2550.32 2023.99 L2372.79 2023.99 L2195.10 2023.99 L2017.41 2050.82 L1839.71 2170.97 L1662.02 2170.97 L1484.49 2157.64 L1306.80 2157.64 L1129.11 2157.64 L951.41 2330.10 L773.89 2330.10 L596.19 2330.10" stroke-linejoin="round" style="fill:none;stroke:#D41159;stroke-width:9.72"/>
 	<line x1="524.98" y1="2696.29" x2="524.98" y2="309.82" style="stroke:#000000;stroke-width:6.48"/>
 	<line x1="524.98" y1="2625.08" x2="479.93" y2="2625.08" style="stroke:#000000;stroke-width:6.48"/>
 	<text x="457.48" y="2664.51" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" text-anchor="end">0</text>
@@ -1100,5 +1101,11 @@
 	<text x="5077.13" y="2763.79" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" transform="rotate(-90 5077.13,2763.79)" text-anchor="end">2022</text>
 	<line x1="5215.39" y1="2696.29" x2="5215.39" y2="2741.34" style="stroke:#000000;stroke-width:6.48"/>
 	<text x="5254.82" y="2763.79" style="font-family:'Helvetica';font-size:112.56px;fill:#000000" transform="rotate(-90 5254.82,2763.79)" text-anchor="end">2023</text>
+	<rect x="563.79" y="348.64" width="1411.59" height="367.20" style="fill:#FFFFFF"/>
+	<rect x="567.03" y="351.88" width="1405.11" height="360.72" style="fill:none;stroke:#FFFFFF;stroke-width:6.48"/>
+	<line x1="612.39" y1="453.43" x2="871.59" y2="453.43" style="stroke:#1A85FF;stroke-width:9.72"/>
+	<line x1="612.39" y1="611.04" x2="871.59" y2="611.04" style="stroke:#D41159;stroke-width:9.72"/>
+	<text x="939.09" y="492.87" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">East Asia &amp; Pacific</text>
+	<text x="939.09" y="650.48" style="font-family:'Helvetica';font-size:112.56px;fill:#000000">Japan</text>
 	<text x="2905.71" y="243.10" style="font-family:'Helvetica';font-size:157.44px;fill:#000000" text-anchor="middle">Female Representation in National Legislature</text>
 </svg>
