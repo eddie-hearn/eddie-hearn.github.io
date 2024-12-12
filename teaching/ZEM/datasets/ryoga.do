@@ -1,5 +1,5 @@
 
-cp https://eddie-hearn.github.io/teaching/ZEM/datasets/terrorism.csv terrorism, replace
+cp https://eddie-hearn.github.io/teaching/ZEM/datasets/terrorism.csv terrorism.csv, replace
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/pol-dev.csv pol-dev.csv, replace 
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/econ-dev.csv econ-dev.csv, replace
 
