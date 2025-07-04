@@ -25,7 +25,7 @@ if _rc!=0 {
 
 cd trade
 cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.dta" trade.dta
-cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.do" trade.do
+cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade.do
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
