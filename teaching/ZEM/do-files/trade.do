@@ -23,8 +23,8 @@ if _rc!=0 {
 	noisily display "directory already exists"
 	}
 
-cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.dta" trade/trade.dta
-cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade/trade.do
+cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.dta" trade/trade.dta, replace
+cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade/trade.do, replace
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
