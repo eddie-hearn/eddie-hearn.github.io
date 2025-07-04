@@ -29,17 +29,17 @@ cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade.do
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
-capture winexec explorer.exe covid
+capture winexec explorer.exe trade
 }
 
 if c(os)=="MacOSX" {
 display "MAC OS detected"
-capture winexec open covid
+capture winexec open trade
 }
 
 if c(os)=="Unix" {
 display "LINUX OS detected"
-capture winexec xdg-open covid
+capture winexec xdg-open trade
 }
 
 
