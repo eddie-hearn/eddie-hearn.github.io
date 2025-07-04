@@ -43,4 +43,4 @@ capture winexec xdg-open trade
 
 cd trade
 display "folder should open - if not check your working directory and find the folder"
-display to use data type: use trade
+display "to use data type: use trade"
