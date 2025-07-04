@@ -23,9 +23,8 @@ if _rc!=0 {
 	noisily display "directory already exists"
 	}
 
-cd trade
-cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.dta" trade.dta
-cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade.do
+cp "https://eddie-hearn.github.io/teaching/ZEM/data/trade.dta" trade/trade.dta
+cp "https://eddie-hearn.github.io/teaching/ZEM/do-files/trade.do" trade/trade.do
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
@@ -42,4 +41,6 @@ display "LINUX OS detected"
 capture winexec xdg-open trade
 }
 
-
+cd trade
+display "folder should open - if not check your working directory and find the folder"
+display to use data type: use trade
