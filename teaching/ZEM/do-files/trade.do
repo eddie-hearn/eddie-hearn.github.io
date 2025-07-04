@@ -38,7 +38,7 @@ capture winexec open trade
 
 if c(os)=="Unix" {
 display "LINUX OS detected"
-capture winexec xdg-open trade
+capture shell xdg-open trade
 }
 
 cd trade
