@@ -1,0 +1,1873 @@
+country,Locationcode,year,nbi
+Afghanistan,4,1990,57686
+Afghanistan,4,1995,71522
+Afghanistan,4,2000,75917
+Afghanistan,4,2005,87314
+Afghanistan,4,2010,102276
+Afghanistan,4,2015,339432
+Afghanistan,4,2020,144098
+Afghanistan,4,2024,98110
+Albania,8,1990,66013
+Albania,8,1995,71354
+Albania,8,2000,76695
+Albania,8,2005,64739
+Albania,8,2010,52784
+Albania,8,2015,52031
+Albania,8,2020,48810
+Albania,8,2024,46377
+Algeria,12,1990,273954
+Algeria,12,1995,262032
+Algeria,12,2000,250110
+Algeria,12,2005,197728
+Algeria,12,2010,217268
+Algeria,12,2015,239473
+Algeria,12,2020,250378
+Algeria,12,2024,259458
+American Samoa*,16,1990,21283
+American Samoa*,16,1995,23098
+American Samoa*,16,2000,24912
+American Samoa*,16,2005,24233
+American Samoa*,16,2010,23555
+American Samoa*,16,2015,23513
+American Samoa*,16,2020,23608
+American Samoa*,16,2024,23684
+Andorra,20,1990,38891
+Andorra,20,1995,44206
+Andorra,20,2000,42147
+Andorra,20,2005,50298
+Andorra,20,2010,52053
+Andorra,20,2015,42264
+Andorra,20,2020,45574
+Andorra,20,2024,48408
+Angola,24,1990,33517
+Angola,24,1995,39813
+Angola,24,2000,46108
+Angola,24,2005,62331
+Angola,24,2010,336367
+Angola,24,2015,632178
+Angola,24,2020,656434
+Angola,24,2024,676507
+Antigua and Barbuda,28,1990,12029
+Antigua and Barbuda,28,1995,17550
+Antigua and Barbuda,28,2000,23071
+Antigua and Barbuda,28,2005,24741
+Antigua and Barbuda,28,2010,26412
+Antigua and Barbuda,28,2015,28082
+Antigua and Barbuda,28,2020,29386
+Antigua and Barbuda,28,2024,30473
+Azerbaijan,31,1990,402177
+Azerbaijan,31,1995,588812
+Azerbaijan,31,2000,523518
+Azerbaijan,31,2005,301922
+Azerbaijan,31,2010,251417
+Azerbaijan,31,2015,224337
+Azerbaijan,31,2020,198894
+Azerbaijan,31,2024,218460
+Argentina,32,1990,1647935
+Argentina,32,1995,1589660
+Argentina,32,2000,1543851
+Argentina,32,2005,1641560
+Argentina,32,2010,1799680
+Argentina,32,2015,1856613
+Argentina,32,2020,1912294
+Argentina,32,2024,1958039
+Australia*,36,1990,3991501
+Australia*,36,1995,4215646
+Australia*,36,2000,4389847
+Australia*,36,2005,4880921
+Australia*,36,2010,5879802
+Australia*,36,2015,6733056
+Australia*,36,2020,7604850
+Australia*,36,2024,8111404
+Austria,40,1990,633753
+Austria,40,1995,764758
+Austria,40,2000,920045
+Austria,40,2005,1174101
+Austria,40,2010,1285706
+Austria,40,2015,1540486
+Austria,40,2020,1781046
+Austria,40,2024,2327064
+Bahamas,44,1990,26855
+Bahamas,44,1995,31654
+Bahamas,44,2000,36454
+Bahamas,44,2005,45531
+Bahamas,44,2010,54745
+Bahamas,44,2015,59241
+Bahamas,44,2020,63583
+Bahamas,44,2024,67285
+Bahrain,48,1990,176972
+Bahrain,48,1995,213818
+Bahrain,48,2000,238924
+Bahrain,48,2005,387591
+Bahrain,48,2010,643007
+Bahrain,48,2015,721540
+Bahrain,48,2020,785983
+Bahrain,48,2024,840202
+Bangladesh,50,1990,881617
+Bangladesh,50,1995,934735
+Bangladesh,50,2000,987853
+Bangladesh,50,2005,1062270
+Bangladesh,50,2010,1345546
+Bangladesh,50,2015,1422179
+Bangladesh,50,2020,2115408
+Bangladesh,50,2024,2906338
+Armenia,51,1990,433541
+Armenia,51,1995,622042
+Armenia,51,2000,588242
+Armenia,51,2005,476812
+Armenia,51,2010,210873
+Armenia,51,2015,190896
+Armenia,51,2020,207139
+Armenia,51,2024,274645
+Barbados,52,1990,24024
+Barbados,52,1995,26224
+Barbados,52,2000,28424
+Barbados,52,2005,30624
+Barbados,52,2010,32825
+Barbados,52,2015,34475
+Barbados,52,2020,34869
+Barbados,52,2024,35187
+Belgium,56,1990,944340
+Belgium,56,1995,1003834
+Belgium,56,2000,1076676
+Belgium,56,2005,1243352
+Belgium,56,2010,1567639
+Belgium,56,2015,1814949
+Belgium,56,2020,2046975
+Belgium,56,2024,2349032
+Bermuda*,60,1990,15683
+Bermuda*,60,1995,16676
+Bermuda*,60,2000,17684
+Bermuda*,60,2005,18108
+Bermuda*,60,2010,18547
+Bermuda*,60,2015,19212
+Bermuda*,60,2020,19739
+Bermuda*,60,2024,20171
+Bhutan,64,1990,23807
+Bhutan,64,1995,27972
+Bhutan,64,2000,32137
+Bhutan,64,2005,40279
+Bhutan,64,2010,48420
+Bhutan,64,2015,51106
+Bhutan,64,2020,53612
+Bhutan,64,2024,55705
+Bolivia (Plurinational State of),68,1990,73758
+Bolivia (Plurinational State of),68,1995,83598
+Bolivia (Plurinational State of),68,2000,92658
+Bolivia (Plurinational State of),68,2005,107745
+Bolivia (Plurinational State of),68,2010,122846
+Bolivia (Plurinational State of),68,2015,143008
+Bolivia (Plurinational State of),68,2020,164121
+Bolivia (Plurinational State of),68,2024,183234
+Bosnia and Herzegovina,70,1990,56000
+Bosnia and Herzegovina,70,1995,69476
+Bosnia and Herzegovina,70,2000,82952
+Bosnia and Herzegovina,70,2005,47287
+Bosnia and Herzegovina,70,2010,38945
+Bosnia and Herzegovina,70,2015,38597
+Bosnia and Herzegovina,70,2020,36042
+Bosnia and Herzegovina,70,2024,34120
+Botswana,72,1990,27510
+Botswana,72,1995,40168
+Botswana,72,2000,74934
+Botswana,72,2005,84661
+Botswana,72,2010,94863
+Botswana,72,2015,103053
+Botswana,72,2020,110268
+Botswana,72,2024,116402
+Brazil,76,1990,803218
+Brazil,76,1995,732622
+Brazil,76,2000,687362
+Brazil,76,2005,641029
+Brazil,76,2010,596859
+Brazil,76,2015,646540
+Brazil,76,2020,1048866
+Brazil,76,2024,1406299
+Belize,84,1990,30404
+Belize,84,1995,33446
+Belize,84,2000,36488
+Belize,84,2005,41438
+Belize,84,2010,46390
+Belize,84,2015,54615
+Belize,84,2020,62043
+Belize,84,2024,68706
+Solomon Islands,90,1990,4226
+Solomon Islands,90,1995,4178
+Solomon Islands,90,2000,3981
+Solomon Islands,90,2005,3271
+Solomon Islands,90,2010,2760
+Solomon Islands,90,2015,2585
+Solomon Islands,90,2020,2520
+Solomon Islands,90,2024,2469
+British Virgin Islands*,92,1990,8035
+British Virgin Islands*,92,1995,10046
+British Virgin Islands*,92,2000,12958
+British Virgin Islands*,92,2005,15016
+British Virgin Islands*,92,2010,17076
+British Virgin Islands*,92,2015,19535
+British Virgin Islands*,92,2020,22164
+British Virgin Islands*,92,2024,24520
+Brunei Darussalam,96,1990,73200
+Brunei Darussalam,96,1995,84748
+Brunei Darussalam,96,2000,96296
+Brunei Darussalam,96,2005,98441
+Brunei Darussalam,96,2010,100587
+Brunei Darussalam,96,2015,102733
+Brunei Darussalam,96,2020,111959
+Brunei Darussalam,96,2024,119933
+Bulgaria,100,1990,21510
+Bulgaria,100,1995,32435
+Bulgaria,100,2000,43360
+Bulgaria,100,2005,61074
+Bulgaria,100,2010,76287
+Bulgaria,100,2015,123803
+Bulgaria,100,2020,184363
+Bulgaria,100,2024,299100
+Myanmar,104,1990,133545
+Myanmar,104,1995,113663
+Myanmar,104,2000,98011
+Myanmar,104,2005,83025
+Myanmar,104,2010,76414
+Myanmar,104,2015,73309
+Myanmar,104,2020,76446
+Myanmar,104,2024,79052
+Burundi,108,1990,333110
+Burundi,108,1995,254853
+Burundi,108,2000,125628
+Burundi,108,2005,192774
+Burundi,108,2010,247321
+Burundi,108,2015,298299
+Burundi,108,2020,344767
+Burundi,108,2024,387101
+Belarus,112,1990,1248977
+Belarus,112,1995,1186282
+Belarus,112,2000,1123586
+Belarus,112,2005,1106982
+Belarus,112,2010,1090378
+Belarus,112,2015,1082905
+Belarus,112,2020,1067090
+Belarus,112,2024,1054604
+Cambodia,116,1990,38375
+Cambodia,116,1995,92230
+Cambodia,116,2000,146085
+Cambodia,116,2005,114096
+Cambodia,116,2010,82028
+Cambodia,116,2015,73962
+Cambodia,116,2020,79341
+Cambodia,116,2024,83925
+Cameroon,120,1990,265967
+Cameroon,120,1995,244791
+Cameroon,120,2000,227242
+Cameroon,120,2005,265503
+Cameroon,120,2010,291474
+Cameroon,120,2015,508346
+Cameroon,120,2020,579209
+Cameroon,120,2024,642948
+Canada,124,1990,4251056
+Canada,124,1995,4853738
+Canada,124,2000,5525404
+Canada,124,2005,6086976
+Canada,124,2010,7035001
+Canada,124,2015,8049874
+Canada,124,2020,8332892
+Canada,124,2024,8805839
+Cabo Verde,132,1990,8931
+Cabo Verde,132,1995,9979
+Cabo Verde,132,2000,11027
+Cabo Verde,132,2005,12700
+Cabo Verde,132,2010,14373
+Cabo Verde,132,2015,14924
+Cabo Verde,132,2020,15788
+Cabo Verde,132,2024,16515
+Cayman Islands*,136,1990,9315
+Cayman Islands*,136,1995,12666
+Cayman Islands*,136,2000,19176
+Cayman Islands*,136,2005,20679
+Cayman Islands*,136,2010,24062
+Cayman Islands*,136,2015,26193
+Cayman Islands*,136,2020,29242
+Cayman Islands*,136,2024,31935
+Central African Republic,140,1990,67234
+Central African Republic,140,1995,99712
+Central African Republic,140,2000,123529
+Central African Republic,140,2005,96409
+Central African Republic,140,2010,94685
+Central African Republic,140,2015,81568
+Central African Republic,140,2020,88546
+Central African Republic,140,2024,94556
+Sri Lanka,144,1990,41561
+Sri Lanka,144,1995,40841
+Sri Lanka,144,2000,40132
+Sri Lanka,144,2005,39526
+Sri Lanka,144,2010,38959
+Sri Lanka,144,2015,39706
+Sri Lanka,144,2020,40254
+Sri Lanka,144,2024,40698
+Chad,148,1990,74342
+Chad,148,1995,89584
+Chad,148,2000,104825
+Chad,148,2005,352130
+Chad,148,2010,417034
+Chad,148,2015,466968
+Chad,148,2020,547494
+Chad,148,2024,1269673
+Chile,152,1990,100133
+Chile,152,1995,125754
+Chile,152,2000,166608
+Chile,152,2005,241522
+Chile,152,2010,361531
+Chile,152,2015,598039
+Chile,152,2020,1476240
+Chile,152,2024,1538324
+China,156,1990,518395
+China,156,1995,610608
+China,156,2000,720915
+China,156,2005,853360
+China,156,2010,1010008
+China,156,2015,1196007
+China,156,2020,1415116
+China,156,2024,1638718
+"China, Taiwan Province of China",158,1990,66378
+"China, Taiwan Province of China",158,1995,246682
+"China, Taiwan Province of China",158,2000,450366
+"China, Taiwan Province of China",158,2005,548367
+"China, Taiwan Province of China",158,2010,587646
+"China, Taiwan Province of China",158,2015,866324
+"China, Taiwan Province of China",158,2020,1055191
+"China, Taiwan Province of China",158,2024,1136425
+Colombia,170,1990,100672
+Colombia,170,1995,109550
+Colombia,170,2000,109863
+Colombia,170,2005,110495
+Colombia,170,2010,126424
+Colombia,170,2015,145504
+Colombia,170,2020,1932807
+Colombia,170,2024,3063518
+Comoros,174,1990,14079
+Comoros,174,1995,13939
+Comoros,174,2000,13799
+Comoros,174,2005,13209
+Comoros,174,2010,12618
+Comoros,174,2015,12555
+Comoros,174,2020,12496
+Comoros,174,2024,12449
+Mayotte,175,1990,15229
+Mayotte,175,1995,26316
+Mayotte,175,2000,45474
+Mayotte,175,2005,63176
+Mayotte,175,2010,72757
+Mayotte,175,2015,81386
+Mayotte,175,2020,111540
+Mayotte,175,2024,143528
+Congo,178,1990,129391
+Congo,178,1995,191635
+Congo,178,2000,305880
+Congo,178,2005,318724
+Congo,178,2010,425173
+Congo,178,2015,390142
+Congo,178,2020,387606
+Congo,178,2024,385589
+Democratic Republic of the Congo,180,1990,754194
+Democratic Republic of the Congo,180,1995,1816963
+Democratic Republic of the Congo,180,2000,744387
+Democratic Republic of the Congo,180,2005,623009
+Democratic Republic of the Congo,180,2010,589882
+Democratic Republic of the Congo,180,2015,810018
+Democratic Republic of the Congo,180,2020,952871
+Democratic Republic of the Congo,180,2024,1085090
+Cook Islands*,184,1990,2587
+Cook Islands*,184,1995,2686
+Cook Islands*,184,2000,2785
+Cook Islands*,184,2005,3277
+Cook Islands*,184,2010,3769
+Cook Islands*,184,2015,4168
+Cook Islands*,184,2020,4579
+Cook Islands*,184,2024,4937
+Costa Rica,188,1990,417628
+Costa Rica,188,1995,364287
+Costa Rica,188,2000,310946
+Costa Rica,188,2005,358398
+Costa Rica,188,2010,405779
+Costa Rica,188,2015,411697
+Costa Rica,188,2020,520729
+Costa Rica,188,2024,628404
+Croatia,191,1990,475438
+Croatia,191,1995,674085
+Croatia,191,2000,585298
+Croatia,191,2005,579273
+Croatia,191,2010,573248
+Croatia,191,2015,561093
+Croatia,191,2020,528056
+Croatia,191,2024,527831
+Cuba,192,1990,34555
+Cuba,192,1995,26187
+Cuba,192,2000,18545
+Cuba,192,2005,11693
+Cuba,192,2010,7373
+Cuba,192,2015,4649
+Cuba,192,2020,3024
+Cuba,192,2024,2144
+Cyprus,196,1990,43805
+Cyprus,196,1995,61941
+Cyprus,196,2000,80076
+Cyprus,196,2005,122849
+Cyprus,196,2010,188472
+Cyprus,196,2015,176693
+Cyprus,196,2020,190366
+Cyprus,196,2024,202062
+Czechia,203,1990,442428
+Czechia,203,1995,531039
+Czechia,203,2000,639018
+Czechia,203,2005,670689
+Czechia,203,2010,692197
+Czechia,203,2015,688047
+Czechia,203,2020,680221
+Czechia,203,2024,1025199
+Benin,204,1990,76751
+Benin,204,1995,105703
+Benin,204,2000,134655
+Benin,204,2005,248320
+Benin,204,2010,309225
+Benin,204,2015,366284
+Benin,204,2020,394276
+Benin,204,2024,418202
+Denmark*,208,1990,235918
+Denmark*,208,1995,298278
+Denmark*,208,2000,372128
+Denmark*,208,2005,423167
+Denmark*,208,2010,509751
+Denmark*,208,2015,616741
+Denmark*,208,2020,718856
+Denmark*,208,2024,847475
+Dominica,212,1990,2519
+Dominica,212,1995,3121
+Dominica,212,2000,3723
+Dominica,212,2005,4744
+Dominica,212,2010,8110
+Dominica,212,2015,8093
+Dominica,212,2020,8284
+Dominica,212,2024,8440
+Dominican Republic,214,1990,291151
+Dominican Republic,214,1995,323381
+Dominican Republic,214,2000,355611
+Dominican Republic,214,2005,375417
+Dominican Republic,214,2010,395479
+Dominican Republic,214,2015,549289
+Dominican Republic,214,2020,603794
+Dominican Republic,214,2024,738667
+Ecuador,218,1990,139204
+Ecuador,218,1995,145626
+Ecuador,218,2000,150585
+Ecuador,218,2005,144415
+Ecuador,218,2010,358874
+Ecuador,218,2015,332142
+Ecuador,218,2020,721560
+Ecuador,218,2024,747749
+El Salvador,222,1990,47360
+El Salvador,222,1995,39537
+El Salvador,222,2000,31713
+El Salvador,222,2005,36029
+El Salvador,222,2010,40342
+El Salvador,222,2015,42059
+El Salvador,222,2020,42767
+El Salvador,222,2024,43342
+Equatorial Guinea,226,1990,2740
+Equatorial Guinea,226,1995,3629
+Equatorial Guinea,226,2000,4517
+Equatorial Guinea,226,2005,6588
+Equatorial Guinea,226,2010,8658
+Equatorial Guinea,226,2015,209611
+Equatorial Guinea,226,2020,230618
+Equatorial Guinea,226,2024,248930
+Ethiopia,231,1990,875325
+Ethiopia,231,1995,478712
+Ethiopia,231,2000,311441
+Ethiopia,231,2005,170773
+Ethiopia,231,2010,227078
+Ethiopia,231,2015,797374
+Ethiopia,231,2020,875170
+Ethiopia,231,2024,1168455
+Eritrea,232,1990,11848
+Eritrea,232,1995,12400
+Eritrea,232,2000,12952
+Eritrea,232,2005,15905
+Eritrea,232,2010,15813
+Eritrea,232,2015,15941
+Eritrea,232,2020,13934
+Eritrea,232,2024,12512
+Estonia,233,1990,381997
+Estonia,233,1995,315755
+Estonia,233,2000,249512
+Estonia,233,2005,233701
+Estonia,233,2010,217890
+Estonia,233,2015,194664
+Estonia,233,2020,199277
+Estonia,233,2024,203046
+Faroe Islands*,234,1990,4285
+Faroe Islands*,234,1995,2900
+Faroe Islands*,234,2000,3593
+Faroe Islands*,234,2005,4583
+Faroe Islands*,234,2010,5096
+Faroe Islands*,234,2015,5485
+Faroe Islands*,234,2020,6812
+Faroe Islands*,234,2024,8101
+Falkland Islands (Malvinas)*,238,1990,855
+Falkland Islands (Malvinas)*,238,1995,868
+Falkland Islands (Malvinas)*,238,2000,1067
+Falkland Islands (Malvinas)*,238,2005,1166
+Falkland Islands (Malvinas)*,238,2010,1436
+Falkland Islands (Malvinas)*,238,2015,1571
+Falkland Islands (Malvinas)*,238,2020,1957
+Falkland Islands (Malvinas)*,238,2024,2333
+Fiji,242,1990,13283
+Fiji,242,1995,13001
+Fiji,242,2000,12719
+Fiji,242,2005,12434
+Fiji,242,2010,13357
+Fiji,242,2015,13751
+Fiji,242,2020,14087
+Fiji,242,2024,14362
+Finland*,246,1990,63255
+Finland*,246,1995,99729
+Finland*,246,2000,136203
+Finland*,246,2005,192169
+Finland*,246,2010,228481
+Finland*,246,2015,314856
+Finland*,246,2020,386052
+Finland*,246,2024,514432
+France*,250,1990,5890023
+France*,250,1995,5936326
+France*,250,2000,6141350
+France*,250,2005,6839877
+France*,250,2010,7322210
+France*,250,2015,7978076
+France*,250,2020,8610719
+France*,250,2024,9186757
+French Guiana*,254,1990,63612
+French Guiana*,254,1995,70131
+French Guiana*,254,2000,76649
+French Guiana*,254,2005,86468
+French Guiana*,254,2010,96288
+French Guiana*,254,2015,106108
+French Guiana*,254,2020,119249
+French Guiana*,254,2024,130924
+French Polynesia*,258,1990,25830
+French Polynesia*,258,1995,28360
+French Polynesia*,258,2000,30329
+French Polynesia*,258,2005,32286
+French Polynesia*,258,2010,31640
+French Polynesia*,258,2015,30058
+French Polynesia*,258,2020,30081
+French Polynesia*,258,2024,30099
+Djibouti,262,1990,122221
+Djibouti,262,1995,99774
+Djibouti,262,2000,100507
+Djibouti,262,2005,92110
+Djibouti,262,2010,102307
+Djibouti,262,2015,112351
+Djibouti,262,2020,119738
+Djibouti,262,2024,125996
+Gabon,266,1990,128188
+Gabon,266,1995,171427
+Gabon,266,2000,214431
+Gabon,266,2005,233824
+Gabon,266,2010,270829
+Gabon,266,2015,378686
+Gabon,266,2020,416651
+Gabon,266,2024,449746
+Georgia,268,1990,304470
+Georgia,268,1995,152235
+Georgia,268,2000,76117
+Georgia,268,2005,71296
+Georgia,268,2010,73078
+Georgia,268,2015,76685
+Georgia,268,2020,79368
+Georgia,268,2024,81582
+Gambia,270,1990,118123
+Gambia,270,1995,150890
+Gambia,270,2000,182514
+Gambia,270,2005,181839
+Gambia,270,2010,185837
+Gambia,270,2015,192540
+Gambia,270,2020,215659
+Gambia,270,2024,236137
+State of Palestine,275,1990,288332
+State of Palestine,275,1995,281767
+State of Palestine,275,2000,275202
+State of Palestine,275,2005,274520
+State of Palestine,275,2010,273840
+State of Palestine,275,2015,273163
+State of Palestine,275,2020,272784
+State of Palestine,275,2024,272481
+Germany,276,1990,6960112
+Germany,276,1995,9637208
+Germany,276,2000,10397459
+Germany,276,2005,11210590
+Germany,276,2010,11665950
+Germany,276,2015,12646813
+Germany,276,2020,15021300
+Germany,276,2024,16750084
+Ghana,288,1990,164851
+Ghana,288,1995,252879
+Ghana,288,2000,191601
+Ghana,288,2005,309932
+Ghana,288,2010,337766
+Ghana,288,2015,414744
+Ghana,288,2020,476412
+Ghana,288,2024,532286
+Gibraltar*,292,1990,8709
+Gibraltar*,292,1995,8381
+Gibraltar*,292,2000,8054
+Gibraltar*,292,2005,9211
+Gibraltar*,292,2010,10369
+Gibraltar*,292,2015,11065
+Gibraltar*,292,2020,11190
+Gibraltar*,292,2024,11291
+Kiribati,296,1990,2162
+Kiribati,296,1995,2223
+Kiribati,296,2000,2283
+Kiribati,296,2005,2487
+Kiribati,296,2010,2868
+Kiribati,296,2015,2919
+Kiribati,296,2020,3126
+Kiribati,296,2024,3302
+Greece,300,1990,618139
+Greece,300,1995,857850
+Greece,300,2000,1111665
+Greece,300,2005,1190707
+Greece,300,2010,1321149
+Greece,300,2015,1242924
+Greece,300,2020,1340456
+Greece,300,2024,1423964
+Greenland*,304,1990,9282
+Greenland*,304,1995,7121
+Greenland*,304,2000,6601
+Greenland*,304,2005,6556
+Greenland*,304,2010,6091
+Greenland*,304,2015,6009
+Greenland*,304,2020,5899
+Greenland*,304,2024,5812
+Grenada,308,1990,4263
+Grenada,308,1995,5544
+Grenada,308,2000,6825
+Grenada,308,2005,6902
+Grenada,308,2010,6980
+Grenada,308,2015,7057
+Grenada,308,2020,7213
+Grenada,308,2024,7340
+Guadeloupe*,312,1990,65944
+Guadeloupe*,312,1995,74566
+Guadeloupe*,312,2000,83188
+Guadeloupe*,312,2005,89065
+Guadeloupe*,312,2010,94942
+Guadeloupe*,312,2015,90956
+Guadeloupe*,312,2020,90206
+Guadeloupe*,312,2024,89610
+Guam*,316,1990,69755
+Guam*,316,1995,71912
+Guam*,316,2000,74070
+Guam*,316,2005,74743
+Guam*,316,2010,75416
+Guam*,316,2015,76089
+Guam*,316,2020,80472
+Guam*,316,2024,84159
+Guatemala,320,1990,264257
+Guatemala,320,1995,156188
+Guatemala,320,2000,48119
+Guatemala,320,2005,57214
+Guatemala,320,2010,66386
+Guatemala,320,2015,74852
+Guatemala,320,2020,84311
+Guatemala,320,2024,92732
+Guinea,324,1990,403621
+Guinea,324,1995,774505
+Guinea,324,2000,560075
+Guinea,324,2005,233419
+Guinea,324,2010,178762
+Guinea,324,2015,126657
+Guinea,324,2020,121437
+Guinea,324,2024,117416
+Guyana,328,1990,4095
+Guyana,328,1995,6352
+Guyana,328,2000,8610
+Guyana,328,2005,10868
+Guyana,328,2010,8182
+Guyana,328,2015,8661
+Guyana,328,2020,31169
+Guyana,328,2024,54175
+Haiti,332,1990,19084
+Haiti,332,1995,18129
+Haiti,332,2000,17222
+Haiti,332,2005,16360
+Haiti,332,2010,17182
+Haiti,332,2015,18047
+Haiti,332,2020,18884
+Haiti,332,2024,19581
+Holy See*,336,1990,726
+Holy See*,336,1995,705
+Holy See*,336,2000,691
+Holy See*,336,2005,659
+Holy See*,336,2010,621
+Holy See*,336,2015,572
+Holy See*,336,2020,528
+Holy See*,336,2024,496
+Honduras,340,1990,270423
+Honduras,340,1995,149442
+Honduras,340,2000,28461
+Honduras,340,2005,27934
+Honduras,340,2010,27288
+Honduras,340,2015,38330
+Honduras,340,2020,39195
+Honduras,340,2024,39901
+"China, Hong Kong SAR",344,1990,2218473
+"China, Hong Kong SAR",344,1995,2443798
+"China, Hong Kong SAR",344,2000,2669122
+"China, Hong Kong SAR",344,2005,2721235
+"China, Hong Kong SAR",344,2010,2779950
+"China, Hong Kong SAR",344,2015,2841113
+"China, Hong Kong SAR",344,2020,2962492
+"China, Hong Kong SAR",344,2024,3063318
+Hungary,348,1990,347510
+Hungary,348,1995,322234
+Hungary,348,2000,296957
+Hungary,348,2005,366787
+Hungary,348,2010,436616
+Hungary,348,2015,475508
+Hungary,348,2020,584567
+Hungary,348,2024,689565
+Iceland,352,1990,9584
+Iceland,352,1995,12738
+Iceland,352,2000,15892
+Iceland,352,2005,25492
+Iceland,352,2010,35091
+Iceland,352,2015,39072
+Iceland,352,2020,65424
+Iceland,352,2024,98818
+India,356,1990,7212791
+India,356,1995,6836861
+India,356,2000,6391543
+India,356,2005,5954999
+India,356,2010,5601237
+India,356,2015,5252296
+India,356,2020,4929816
+India,356,2024,4796255
+Indonesia,360,1990,92058
+Indonesia,360,1995,114419
+Indonesia,360,2000,287645
+Indonesia,360,2005,87508
+Indonesia,360,2010,113288
+Indonesia,360,2015,192119
+Indonesia,360,2020,306702
+Indonesia,360,2024,445726
+Iran (Islamic Republic of),364,1990,4291601
+Iran (Islamic Republic of),364,1995,2937668
+Iran (Islamic Republic of),364,2000,2476469
+Iran (Islamic Republic of),364,2005,2552206
+Iran (Islamic Republic of),364,2010,2722397
+Iran (Islamic Republic of),364,2015,2729939
+Iran (Islamic Republic of),364,2020,2797235
+Iran (Islamic Republic of),364,2024,3840654
+Iraq,368,1990,83638
+Iraq,368,1995,199460
+Iraq,368,2000,210525
+Iraq,368,2005,134863
+Iraq,368,2010,120466
+Iraq,368,2015,359352
+Iraq,368,2020,365766
+Iraq,368,2024,370980
+Ireland,372,1990,227783
+Ireland,372,1995,247379
+Ireland,372,2000,376321
+Ireland,372,2005,620579
+Ireland,372,2010,751381
+Ireland,372,2015,802470
+Ireland,372,2020,951686
+Ireland,372,2024,1216237
+Israel,376,1990,1622505
+Israel,376,1995,1781111
+Israel,376,2000,1838155
+Israel,376,2005,1881017
+Israel,376,2010,1953214
+Israel,376,2015,2019891
+Israel,376,2020,2068830
+Israel,376,2024,2091569
+Italy,380,1990,1529367
+Italy,380,1995,1810642
+Italy,380,2000,2143259
+Italy,380,2005,3285903
+Italy,380,2010,4719233
+Italy,380,2015,5506199
+Italy,380,2020,6223851
+Italy,380,2024,6553671
+Côte d'Ivoire,384,1990,1822374
+Côte d'Ivoire,384,1995,1992981
+Côte d'Ivoire,384,2000,2157339
+Côte d'Ivoire,384,2005,2308068
+Côte d'Ivoire,384,2010,2458796
+Côte d'Ivoire,384,2015,2609525
+Côte d'Ivoire,384,2020,2760255
+Côte d'Ivoire,384,2024,2880839
+Jamaica,388,1990,20475
+Jamaica,388,1995,22713
+Jamaica,388,2000,24952
+Jamaica,388,2005,24284
+Jamaica,388,2010,23677
+Jamaica,388,2015,23165
+Jamaica,388,2020,23629
+Jamaica,388,2024,24007
+Japan,392,1990,1050475
+Japan,392,1995,1331094
+Japan,392,2000,1651869
+Japan,392,2005,1976528
+Japan,392,2010,2161780
+Japan,392,2015,2577487
+Japan,392,2020,3289042
+Japan,392,2024,3409529
+Kazakhstan,398,1990,3289058
+Kazakhstan,398,1995,2259955
+Kazakhstan,398,2000,1733374
+Kazakhstan,398,2005,1845637
+Kazakhstan,398,2010,1856870
+Kazakhstan,398,2015,1919920
+Kazakhstan,398,2020,1990268
+Kazakhstan,398,2024,2089797
+Jordan,400,1990,1131529
+Jordan,400,1995,1511664
+Jordan,400,2000,1834160
+Jordan,400,2005,2229368
+Jordan,400,2010,3723368
+Jordan,400,2015,4386976
+Jordan,400,2020,4940142
+Jordan,400,2024,5280168
+Kenya,404,1990,298089
+Kenya,404,1995,618745
+Kenya,404,2000,707852
+Kenya,404,2005,773354
+Kenya,404,2010,954925
+Kenya,404,2015,1126886
+Kenya,404,2020,1050147
+Kenya,404,2024,992536
+Dem. People's Republic of Korea,408,1990,34103
+Dem. People's Republic of Korea,408,1995,35143
+Dem. People's Republic of Korea,408,2000,36183
+Dem. People's Republic of Korea,408,2005,40097
+Dem. People's Republic of Korea,408,2010,44010
+Dem. People's Republic of Korea,408,2015,48458
+Dem. People's Republic of Korea,408,2020,49549
+Dem. People's Republic of Korea,408,2024,50439
+Republic of Korea,410,1990,18499
+Republic of Korea,410,1995,52719
+Republic of Korea,410,2000,144426
+Republic of Korea,410,2005,231744
+Republic of Korea,410,2010,566098
+Republic of Korea,410,2015,1312172
+Republic of Korea,410,2020,1723389
+Republic of Korea,410,2024,1811507
+Kuwait,414,1990,1056143
+Kuwait,414,1995,935152
+Kuwait,414,2000,1116932
+Kuwait,414,2005,1353949
+Kuwait,414,2010,1871827
+Kuwait,414,2015,2610785
+Kuwait,414,2020,3030731
+Kuwait,414,2024,3323191
+Kyrgyzstan,417,1990,623083
+Kyrgyzstan,417,1995,518338
+Kyrgyzstan,417,2000,389824
+Kyrgyzstan,417,2005,309399
+Kyrgyzstan,417,2010,232065
+Kyrgyzstan,417,2015,204382
+Kyrgyzstan,417,2020,199011
+Kyrgyzstan,417,2024,194816
+Lao People's Democratic Republic,418,1990,22866
+Lao People's Democratic Republic,418,1995,23526
+Lao People's Democratic Republic,418,2000,21948
+Lao People's Democratic Republic,418,2005,20371
+Lao People's Democratic Republic,418,2010,32955
+Lao People's Democratic Republic,418,2015,45538
+Lao People's Democratic Republic,418,2020,48731
+Lao People's Democratic Republic,418,2024,51446
+Lebanon,422,1990,424488
+Lebanon,422,1995,466437
+Lebanon,422,2000,514836
+Lebanon,422,2005,553850
+Lebanon,422,2010,625884
+Lebanon,422,2015,1763717
+Lebanon,422,2020,1586346
+Lebanon,422,2024,1422583
+Lesotho,426,1990,8240
+Lesotho,426,1995,7204
+Lesotho,426,2000,6167
+Lesotho,426,2005,6290
+Lesotho,426,2010,6414
+Lesotho,426,2015,9152
+Lesotho,426,2020,12060
+Lesotho,426,2024,15039
+Latvia,428,1990,646007
+Latvia,428,1995,538093
+Latvia,428,2000,430178
+Latvia,428,2005,376725
+Latvia,428,2010,313786
+Latvia,428,2015,265418
+Latvia,428,2020,239422
+Latvia,428,2024,220471
+Liberia,430,1990,94964
+Liberia,430,1995,208563
+Liberia,430,2000,151868
+Liberia,430,2005,87217
+Liberia,430,2010,99165
+Liberia,430,2015,112111
+Liberia,430,2020,87947
+Liberia,430,2024,72423
+Libya,434,1990,457075
+Libya,434,1995,508041
+Libya,434,2000,567436
+Libya,434,2005,625412
+Libya,434,2010,687192
+Libya,434,2015,771146
+Libya,434,2020,826537
+Libya,434,2024,897751
+Liechtenstein,438,1990,10906
+Liechtenstein,438,1995,13311
+Liechtenstein,438,2000,15483
+Liechtenstein,438,2005,18898
+Liechtenstein,438,2010,22342
+Liechtenstein,438,2015,23799
+Liechtenstein,438,2020,25877
+Liechtenstein,438,2024,27669
+Lithuania,440,1990,349258
+Lithuania,440,1995,273587
+Lithuania,440,2000,214311
+Lithuania,440,2005,201209
+Lithuania,440,2010,160772
+Lithuania,440,2015,136021
+Lithuania,440,2020,145184
+Lithuania,440,2024,175194
+Luxembourg,442,1990,113795
+Luxembourg,442,1995,126106
+Luxembourg,442,2000,139750
+Luxembourg,442,2005,150618
+Luxembourg,442,2010,163142
+Luxembourg,442,2015,248888
+Luxembourg,442,2020,298062
+Luxembourg,442,2024,344309
+"China, Macao SAR",446,1990,205047
+"China, Macao SAR",446,1995,224929
+"China, Macao SAR",446,2000,240791
+"China, Macao SAR",446,2005,279308
+"China, Macao SAR",446,2010,318506
+"China, Macao SAR",446,2015,376066
+"China, Macao SAR",446,2020,403490
+"China, Macao SAR",446,2024,426862
+Madagascar,450,1990,23917
+Madagascar,450,1995,21177
+Madagascar,450,2000,23541
+Madagascar,450,2005,26058
+Madagascar,450,2010,28905
+Madagascar,450,2015,32075
+Madagascar,450,2020,35563
+Madagascar,450,2024,38625
+Malawi,454,1990,1127724
+Malawi,454,1995,241624
+Malawi,454,2000,232620
+Malawi,454,2005,221661
+Malawi,454,2010,217722
+Malawi,454,2015,197328
+Malawi,454,2020,191362
+Malawi,454,2024,186719
+Malaysia,458,1990,1027572
+Malaysia,458,1995,1312828
+Malaysia,458,2000,1613819
+Malaysia,458,2005,2174308
+Malaysia,458,2010,3086876
+Malaysia,458,2015,3513497
+Malaysia,458,2020,3718696
+Malaysia,458,2024,3806514
+Maldives,462,1990,8689
+Maldives,462,1995,18510
+Maldives,462,2000,27092
+Maldives,462,2005,45045
+Maldives,462,2010,54659
+Maldives,462,2015,64273
+Maldives,462,2020,70079
+Maldives,462,2024,75099
+Mali,466,1990,160736
+Mali,466,1995,176187
+Mali,466,2000,189475
+Mali,466,2005,258630
+Mali,466,2010,341078
+Mali,466,2015,420504
+Mali,466,2020,485829
+Mali,466,2024,545323
+Malta,470,1990,15077
+Malta,470,1995,17740
+Malta,470,2000,21521
+Malta,470,2005,24560
+Malta,470,2010,33008
+Malta,470,2015,52642
+Malta,470,2020,114760
+Malta,470,2024,199466
+Martinique*,474,1990,38705
+Martinique*,474,1995,46599
+Martinique*,474,2000,54492
+Martinique*,474,2005,57034
+Martinique*,474,2010,59575
+Martinique*,474,2015,69174
+Martinique*,474,2020,68624
+Martinique*,474,2024,68187
+Mauritania,478,1990,111650
+Mauritania,478,1995,89562
+Mauritania,478,2000,57366
+Mauritania,478,2005,58211
+Mauritania,478,2010,84920
+Mauritania,478,2015,166552
+Mauritania,478,2020,182286
+Mauritania,478,2024,195937
+Mauritius,480,1990,3613
+Mauritius,480,1995,7493
+Mauritius,480,2000,15543
+Mauritius,480,2005,19647
+Mauritius,480,2010,24836
+Mauritius,480,2015,28585
+Mauritius,480,2020,28893
+Mauritius,480,2024,29142
+Mexico,484,1990,701513
+Mexico,484,1995,458051
+Mexico,484,2000,526172
+Mexico,484,2005,701803
+Mexico,484,2010,957593
+Mexico,484,2015,1088731
+Mexico,484,2020,1335154
+Mexico,484,2024,1726089
+Monaco,492,1990,20359
+Monaco,492,1995,21060
+Monaco,492,2000,21787
+Monaco,492,2005,21312
+Monaco,492,2010,21132
+Monaco,492,2015,25983
+Monaco,492,2020,26601
+Monaco,492,2024,27106
+Mongolia,496,1990,6718
+Mongolia,496,1995,7424
+Mongolia,496,2000,8206
+Mongolia,496,2005,11477
+Mongolia,496,2010,16062
+Mongolia,496,2015,19886
+Mongolia,496,2020,21345
+Mongolia,496,2024,22589
+Republic of Moldova*,498,1990,533397
+Republic of Moldova*,498,1995,365099
+Republic of Moldova*,498,2000,250134
+Republic of Moldova*,498,2005,174263
+Republic of Moldova*,498,2010,132386
+Republic of Moldova*,498,2015,101730
+Republic of Moldova*,498,2020,77291
+Republic of Moldova*,498,2024,188207
+Montenegro,499,1990,73743
+Montenegro,499,1995,73743
+Montenegro,499,2000,73743
+Montenegro,499,2005,73743
+Montenegro,499,2010,78512
+Montenegro,499,2015,71719
+Montenegro,499,2020,70999
+Montenegro,499,2024,92237
+Montserrat*,500,1990,2013
+Montserrat*,500,1995,1612
+Montserrat*,500,2000,1211
+Montserrat*,500,2005,1244
+Montserrat*,500,2010,1291
+Montserrat*,500,2015,1351
+Montserrat*,500,2020,1379
+Montserrat*,500,2024,1402
+Morocco,504,1990,54895
+Morocco,504,1995,50360
+Morocco,504,2000,53034
+Morocco,504,2005,56222
+Morocco,504,2010,71189
+Morocco,504,2015,92424
+Morocco,504,2020,102358
+Morocco,504,2024,111069
+Mozambique,508,1990,122332
+Mozambique,508,1995,168256
+Mozambique,508,2000,195702
+Mozambique,508,2005,268694
+Mozambique,508,2010,306471
+Mozambique,508,2015,321794
+Mozambique,508,2020,338850
+Mozambique,508,2024,353143
+Oman,512,1990,526784
+Oman,512,1995,538639
+Oman,512,2000,550760
+Oman,512,2005,608416
+Oman,512,2010,803387
+Oman,512,2015,1827972
+Oman,512,2020,1766142
+Oman,512,2024,2283366
+Namibia,516,1990,120641
+Namibia,516,1995,115372
+Namibia,516,2000,135547
+Namibia,516,2005,107347
+Namibia,516,2010,103826
+Namibia,516,2015,101618
+Namibia,516,2020,109391
+Namibia,516,2024,116035
+Nauru,520,1990,2815
+Nauru,520,1995,2605
+Nauru,520,2000,2394
+Nauru,520,2005,2253
+Nauru,520,2010,906
+Nauru,520,2015,1833
+Nauru,520,2020,2201
+Nauru,520,2024,2548
+Nepal,524,1990,429974
+Nepal,524,1995,690225
+Nepal,524,2000,717900
+Nepal,524,2005,680729
+Nepal,524,2010,581889
+Nepal,524,2015,509471
+Nepal,524,2020,487564
+Nepal,524,2024,470719
+Netherlands*,528,1990,1194306
+Netherlands*,528,1995,1397371
+Netherlands*,528,2000,1584638
+Netherlands*,528,2005,1735632
+Netherlands*,528,2010,1850649
+Netherlands*,528,2015,2024059
+Netherlands*,528,2020,2425521
+Netherlands*,528,2024,2956518
+Curaçao*,531,1990,43150
+Curaçao*,531,1995,43150
+Curaçao*,531,2000,43150
+Curaçao*,531,2005,43150
+Curaçao*,531,2010,34630
+Curaçao*,531,2015,37611
+Curaçao*,531,2020,57210
+Curaçao*,531,2024,80020
+Aruba*,533,1990,14444
+Aruba*,533,1995,22274
+Aruba*,533,2000,30104
+Aruba*,533,2005,32540
+Aruba*,533,2010,34328
+Aruba*,533,2015,36114
+Aruba*,533,2020,53593
+Aruba*,533,2024,73494
+Sint Maarten (Dutch part)*,534,1990,23861
+Sint Maarten (Dutch part)*,534,1995,23861
+Sint Maarten (Dutch part)*,534,2000,23861
+Sint Maarten (Dutch part)*,534,2005,13099
+Sint Maarten (Dutch part)*,534,2010,26203
+Sint Maarten (Dutch part)*,534,2015,27295
+Sint Maarten (Dutch part)*,534,2020,28845
+Sint Maarten (Dutch part)*,534,2024,30148
+"Bonaire, Sint Eustatius and Saba*",535,1990,12930
+"Bonaire, Sint Eustatius and Saba*",535,1995,13508
+"Bonaire, Sint Eustatius and Saba*",535,2000,14233
+"Bonaire, Sint Eustatius and Saba*",535,2005,16980
+"Bonaire, Sint Eustatius and Saba*",535,2010,20559
+"Bonaire, Sint Eustatius and Saba*",535,2015,24610
+"Bonaire, Sint Eustatius and Saba*",535,2020,26454
+"Bonaire, Sint Eustatius and Saba*",535,2024,30676
+New Caledonia*,540,1990,37673
+New Caledonia*,540,1995,43662
+New Caledonia*,540,2000,49651
+New Caledonia*,540,2005,55405
+New Caledonia*,540,2010,61158
+New Caledonia*,540,2015,68881
+New Caledonia*,540,2020,73141
+New Caledonia*,540,2024,76738
+Vanuatu,548,1990,2308
+Vanuatu,548,1995,2461
+Vanuatu,548,2000,2626
+Vanuatu,548,2005,2800
+Vanuatu,548,2010,2991
+Vanuatu,548,2015,3186
+Vanuatu,548,2020,3257
+Vanuatu,548,2024,3315
+New Zealand*,554,1990,526369
+New Zealand*,554,1995,594911
+New Zealand*,554,2000,685966
+New Zealand*,554,2005,855017
+New Zealand*,554,2010,956982
+New Zealand*,554,2015,1132201
+New Zealand*,554,2020,1343900
+New Zealand*,554,2024,1467989
+Nicaragua,558,1990,41421
+Nicaragua,558,1995,26619
+Nicaragua,558,2000,30389
+Nicaragua,558,2005,34919
+Nicaragua,558,2010,37345
+Nicaragua,558,2015,40261
+Nicaragua,558,2020,42167
+Nicaragua,558,2024,43757
+Niger,562,1990,115464
+Niger,562,1995,145999
+Niger,562,2000,122260
+Niger,562,2005,124509
+Niger,562,2010,126482
+Niger,562,2015,252998
+Niger,562,2020,348056
+Niger,562,2024,449236
+Nigeria,566,1990,456621
+Nigeria,566,1995,462999
+Nigeria,566,2000,487882
+Nigeria,566,2005,969714
+Nigeria,566,2010,990494
+Nigeria,566,2015,1199115
+Nigeria,566,2020,1308568
+Nigeria,566,2024,1403281
+Niue*,570,1990,461
+Niue*,570,1995,480
+Niue*,570,2000,498
+Niue*,570,2005,522
+Niue*,570,2010,589
+Niue*,570,2015,588
+Niue*,570,2020,588
+Niue*,570,2024,588
+Norway*,578,1990,192587
+Norway*,578,1995,233302
+Norway*,578,2000,292440
+Norway*,578,2005,361144
+Norway*,578,2010,524601
+Norway*,578,2015,746375
+Norway*,578,2020,852238
+Norway*,578,2024,1012404
+Northern Mariana Islands*,580,1990,26593
+Northern Mariana Islands*,580,1995,32376
+Northern Mariana Islands*,580,2000,40122
+Northern Mariana Islands*,580,2005,37542
+Northern Mariana Islands*,580,2010,24168
+Northern Mariana Islands*,580,2015,21648
+Northern Mariana Islands*,580,2020,21843
+Northern Mariana Islands*,580,2024,22000
+Micronesia (Fed. States of),583,1990,3685
+Micronesia (Fed. States of),583,1995,3342
+Micronesia (Fed. States of),583,2000,3116
+Micronesia (Fed. States of),583,2005,2905
+Micronesia (Fed. States of),583,2010,2806
+Micronesia (Fed. States of),583,2015,2756
+Micronesia (Fed. States of),583,2020,2832
+Micronesia (Fed. States of),583,2024,2894
+Marshall Islands,584,1990,1158
+Marshall Islands,584,1995,1480
+Marshall Islands,584,2000,1891
+Marshall Islands,584,2005,2417
+Marshall Islands,584,2010,3089
+Marshall Islands,584,2015,3284
+Marshall Islands,584,2020,3298
+Marshall Islands,584,2024,3309
+Palau,585,1990,2801
+Palau,585,1995,4749
+Palau,585,2000,6310
+Palau,585,2005,6043
+Palau,585,2010,5490
+Palau,585,2015,4937
+Palau,585,2020,5088
+Palau,585,2024,5212
+Pakistan,586,1990,6208204
+Pakistan,586,1995,3669308
+Pakistan,586,2000,4181912
+Pakistan,586,2005,3174558
+Pakistan,586,2010,3943681
+Pakistan,586,2015,3506520
+Pakistan,586,2020,3276580
+Pakistan,586,2024,4175958
+Panama,591,1990,62744
+Panama,591,1995,70848
+Panama,591,2000,83410
+Panama,591,2005,109461
+Panama,591,2010,157788
+Panama,591,2015,184710
+Panama,591,2020,313165
+Panama,591,2024,477749
+Papua New Guinea,598,1990,33710
+Papua New Guinea,598,1995,33526
+Papua New Guinea,598,2000,26304
+Papua New Guinea,598,2005,29971
+Papua New Guinea,598,2010,30425
+Papua New Guinea,598,2015,30940
+Papua New Guinea,598,2020,31068
+Papua New Guinea,598,2024,31171
+Paraguay,600,1990,195884
+Paraguay,600,1995,186570
+Paraguay,600,2000,176608
+Paraguay,600,2005,168243
+Paraguay,600,2010,160299
+Paraguay,600,2015,156462
+Paraguay,600,2020,169567
+Paraguay,600,2024,180837
+Peru,604,1990,48985
+Peru,604,1995,56831
+Peru,604,2000,66103
+Peru,604,2005,77195
+Peru,604,2010,102662
+Peru,604,2015,152562
+Peru,604,2020,1184762
+Peru,604,2024,1837219
+Philippines,608,1990,134600
+Philippines,608,1995,145980
+Philippines,608,2000,157361
+Philippines,608,2005,168741
+Philippines,608,2010,178147
+Philippines,608,2015,131897
+Philippines,608,2020,87212
+Philippines,608,2024,87212
+Poland,616,1990,1127393
+Poland,616,1995,963028
+Poland,616,2000,822627
+Poland,616,2005,724887
+Poland,616,2010,649114
+Poland,616,2015,683663
+Poland,616,2020,738099
+Poland,616,2024,1739901
+Portugal,620,1990,435782
+Portugal,620,1995,532822
+Portugal,620,2000,651472
+Portugal,620,2005,771184
+Portugal,620,2010,762825
+Portugal,620,2015,864814
+Portugal,620,2020,1001963
+Portugal,620,2024,1127184
+Guinea-Bissau,624,1990,15368
+Guinea-Bissau,624,1995,27961
+Guinea-Bissau,624,2000,20450
+Guinea-Bissau,624,2005,20902
+Guinea-Bissau,624,2010,21391
+Guinea-Bissau,624,2015,22333
+Guinea-Bissau,624,2020,17945
+Guinea-Bissau,624,2024,15064
+Timor-Leste,626,1990,8954
+Timor-Leste,626,1995,9743
+Timor-Leste,626,2000,10602
+Timor-Leste,626,2005,11286
+Timor-Leste,626,2010,11540
+Timor-Leste,626,2015,8520
+Timor-Leste,626,2020,8399
+Timor-Leste,626,2024,8303
+Puerto Rico*,630,1990,321909
+Puerto Rico*,630,1995,338067
+Puerto Rico*,630,2000,355038
+Puerto Rico*,630,2005,352144
+Puerto Rico*,630,2010,304969
+Puerto Rico*,630,2015,280494
+Puerto Rico*,630,2020,247132
+Puerto Rico*,630,2024,223323
+Qatar,634,1990,215508
+Qatar,634,1995,307661
+Qatar,634,2000,439215
+Qatar,634,2005,643000
+Qatar,634,2010,1409000
+Qatar,634,2015,2090000
+Qatar,634,2020,2182000
+Qatar,634,2024,2337000
+Réunion,638,1990,57210
+Réunion,638,1995,77159
+Réunion,638,2000,100678
+Réunion,638,2005,115076
+Réunion,638,2010,123029
+Réunion,638,2015,127209
+Réunion,638,2020,131769
+Réunion,638,2024,135534
+Romania,642,1990,135745
+Romania,642,1995,134970
+Romania,642,2000,134204
+Romania,642,2005,139430
+Romania,642,2010,148107
+Romania,642,2015,212560
+Romania,642,2020,338734
+Romania,642,2024,655579
+Russian Federation,643,1990,11524948
+Russian Federation,643,1995,11928927
+Russian Federation,643,2000,11900297
+Russian Federation,643,2005,11667588
+Russian Federation,643,2010,11199727
+Russian Federation,643,2015,9098229
+Russian Federation,643,2020,7297611
+Russian Federation,643,2024,7605774
+Rwanda,646,1990,160024
+Rwanda,646,1995,215735
+Rwanda,646,2000,347076
+Rwanda,646,2005,423187
+Rwanda,646,2010,426901
+Rwanda,646,2015,514647
+Rwanda,646,2020,513907
+Rwanda,646,2024,513316
+Saint Helena,654,1990,178
+Saint Helena,654,1995,117
+Saint Helena,654,2000,108
+Saint Helena,654,2005,163
+Saint Helena,654,2010,248
+Saint Helena,654,2015,377
+Saint Helena,654,2020,437
+Saint Helena,654,2024,492
+Saint Kitts and Nevis,659,1990,3210
+Saint Kitts and Nevis,659,1995,4248
+Saint Kitts and Nevis,659,2000,5871
+Saint Kitts and Nevis,659,2005,6682
+Saint Kitts and Nevis,659,2010,7245
+Saint Kitts and Nevis,659,2015,7443
+Saint Kitts and Nevis,659,2020,7725
+Saint Kitts and Nevis,659,2024,7958
+Anguilla*,660,1990,2570
+Anguilla*,660,1995,3317
+Anguilla*,660,2000,4063
+Anguilla*,660,2005,4684
+Anguilla*,660,2010,5103
+Anguilla*,660,2015,5471
+Anguilla*,660,2020,5715
+Anguilla*,660,2024,5918
+Saint Lucia,662,1990,5305
+Saint Lucia,662,1995,7155
+Saint Lucia,662,2000,9871
+Saint Lucia,662,2005,9839
+Saint Lucia,662,2010,9050
+Saint Lucia,662,2015,8673
+Saint Lucia,662,2020,8338
+Saint Lucia,662,2024,8079
+Saint Pierre and Miquelon*,666,1990,1099
+Saint Pierre and Miquelon*,666,1995,1320
+Saint Pierre and Miquelon*,666,2000,1458
+Saint Pierre and Miquelon*,666,2005,1147
+Saint Pierre and Miquelon*,666,2010,1017
+Saint Pierre and Miquelon*,666,2015,986
+Saint Pierre and Miquelon*,666,2020,998
+Saint Pierre and Miquelon*,666,2024,1008
+Saint Vincent and the Grenadines,670,1990,3970
+Saint Vincent and the Grenadines,670,1995,4135
+Saint Vincent and the Grenadines,670,2000,4307
+Saint Vincent and the Grenadines,670,2005,4436
+Saint Vincent and the Grenadines,670,2010,4569
+Saint Vincent and the Grenadines,670,2015,4637
+Saint Vincent and the Grenadines,670,2020,4738
+Saint Vincent and the Grenadines,670,2024,4820
+San Marino,674,1990,3310
+San Marino,674,1995,3659
+San Marino,674,2000,4045
+San Marino,674,2005,4218
+San Marino,674,2010,4880
+San Marino,674,2015,5195
+San Marino,674,2020,5543
+San Marino,674,2024,5838
+Sao Tome and Principe,678,1990,5582
+Sao Tome and Principe,678,1995,4936
+Sao Tome and Principe,678,2000,4365
+Sao Tome and Principe,678,2005,3433
+Sao Tome and Principe,678,2010,2700
+Sao Tome and Principe,678,2015,2394
+Sao Tome and Principe,678,2020,2139
+Sao Tome and Principe,678,2024,1955
+Saudi Arabia,682,1990,4484868
+Saudi Arabia,682,1995,4853489
+Saudi Arabia,682,2000,5219382
+Saudi Arabia,682,2005,6605114
+Saudi Arabia,682,2010,8976961
+Saudi Arabia,682,2015,13251622
+Saudi Arabia,682,2020,13071258
+Saudi Arabia,682,2024,13683841
+Senegal,686,1990,270410
+Senegal,686,1995,287654
+Senegal,686,2000,231901
+Senegal,686,2005,238298
+Senegal,686,2010,256092
+Senegal,686,2015,266496
+Senegal,686,2020,274929
+Senegal,686,2024,281867
+Serbia*,688,1990,1064614
+Serbia*,688,1995,1543744
+Serbia*,688,2000,1419951
+Serbia*,688,2005,1078633
+Serbia*,688,2010,901044
+Serbia*,688,2015,797595
+Serbia*,688,2020,733091
+Serbia*,688,2024,712550
+Seychelles,690,1990,3721
+Seychelles,690,1995,5148
+Seychelles,690,2000,6574
+Seychelles,690,2005,8997
+Seychelles,690,2010,11420
+Seychelles,690,2015,12791
+Seychelles,690,2020,13050
+Seychelles,690,2024,13261
+Sierra Leone,694,1990,222148
+Sierra Leone,694,1995,98516
+Sierra Leone,694,2000,97974
+Sierra Leone,694,2005,146227
+Sierra Leone,694,2010,79265
+Sierra Leone,694,2015,58830
+Sierra Leone,694,2020,53746
+Sierra Leone,694,2024,49997
+Singapore,702,1990,729377
+Singapore,702,1995,993616
+Singapore,702,2000,1319433
+Singapore,702,2005,1494527
+Singapore,702,2010,2160350
+Singapore,702,2015,2535340
+Singapore,702,2020,2589107
+Singapore,702,2024,2841665
+Slovakia,703,1990,41295
+Slovakia,703,1995,69323
+Slovakia,703,2000,116376
+Slovakia,703,2005,130491
+Slovakia,703,2010,146319
+Slovakia,703,2015,177624
+Slovakia,703,2020,197161
+Slovakia,703,2024,323991
+Viet Nam,704,1990,88560
+Viet Nam,704,1995,88376
+Viet Nam,704,2000,86213
+Viet Nam,704,2005,81997
+Viet Nam,704,2010,84408
+Viet Nam,704,2015,101386
+Viet Nam,704,2020,200639
+Viet Nam,704,2024,326418
+Slovenia,705,1990,178077
+Slovenia,705,1995,174419
+Slovenia,705,2000,214508
+Slovenia,705,2005,217218
+Slovenia,705,2010,253786
+Slovenia,705,2015,237616
+Slovenia,705,2020,277964
+Slovenia,705,2024,315122
+Somalia,706,1990,478294
+Somalia,706,1995,19527
+Somalia,706,2000,20097
+Somalia,706,2005,20768
+Somalia,706,2010,48106
+Somalia,706,2015,40990
+Somalia,706,2020,58590
+Somalia,706,2024,77972
+South Africa,710,1990,1285707
+South Africa,710,1995,1006597
+South Africa,710,2000,997703
+South Africa,710,2005,1513855
+South Africa,710,2010,2274466
+South Africa,710,2015,3162564
+South Africa,710,2020,2639076
+South Africa,710,2024,2631100
+Zimbabwe,716,1990,634621
+Zimbabwe,716,1995,431226
+Zimbabwe,716,2000,410109
+Zimbabwe,716,2005,402226
+Zimbabwe,716,2010,398307
+Zimbabwe,716,2015,400482
+Zimbabwe,716,2020,416141
+Zimbabwe,716,2024,429108
+Spain*,724,1990,813588
+Spain*,724,1995,1258176
+Spain*,724,2000,2023886
+Spain*,724,2005,4372449
+Spain*,724,2010,6281193
+Spain*,724,2015,5892847
+Spain*,724,2020,7146130
+Spain*,724,2024,8870527
+South Sudan,728,1990,652365
+South Sudan,728,1995,652365
+South Sudan,728,2000,652365
+South Sudan,728,2005,652365
+South Sudan,728,2010,230732
+South Sudan,728,2015,844112
+South Sudan,728,2020,882252
+South Sudan,728,2024,914001
+Sudan,729,1990,1402896
+Sudan,729,1995,1053396
+Sudan,729,2000,805086
+Sudan,729,2005,546419
+Sudan,729,2010,618709
+Sudan,729,2015,620523
+Sudan,729,2020,1379147
+Sudan,729,2024,2397113
+Western Sahara,732,1990,2688
+Western Sahara,732,1995,2989
+Western Sahara,732,2000,3289
+Western Sahara,732,2005,3891
+Western Sahara,732,2010,4493
+Western Sahara,732,2015,5179
+Western Sahara,732,2020,5424
+Western Sahara,732,2024,5628
+Suriname,740,1990,18083
+Suriname,740,1995,22320
+Suriname,740,2000,27506
+Suriname,740,2005,33662
+Suriname,740,2010,39713
+Suriname,740,2015,43127
+Suriname,740,2020,47801
+Suriname,740,2024,51902
+Eswatini,748,1990,74991
+Eswatini,748,1995,35157
+Eswatini,748,2000,34084
+Eswatini,748,2005,33392
+Eswatini,748,2010,32637
+Eswatini,748,2015,32352
+Eswatini,748,2020,32858
+Eswatini,748,2024,33268
+Sweden,752,1990,784283
+Sweden,752,1995,944802
+Sweden,752,2000,1022156
+Sweden,752,2005,1126971
+Sweden,752,2010,1372074
+Sweden,752,2015,1638195
+Sweden,752,2020,2033902
+Sweden,752,2024,2272158
+Switzerland,756,1990,1252320
+Switzerland,756,1995,1363586
+Switzerland,756,2000,1484514
+Switzerland,756,2005,1740312
+Switzerland,756,2010,2053953
+Switzerland,756,2015,2385713
+Switzerland,756,2020,2610189
+Switzerland,756,2024,2773840
+Syrian Arab Republic,760,1990,714140
+Syrian Arab Republic,760,1995,830610
+Syrian Arab Republic,760,2000,834916
+Syrian Arab Republic,760,2005,882398
+Syrian Arab Republic,760,2010,1783595
+Syrian Arab Republic,760,2015,835716
+Syrian Arab Republic,760,2020,868711
+Syrian Arab Republic,760,2024,896042
+Tajikistan,762,1990,428900
+Tajikistan,762,1995,348347
+Tajikistan,762,2000,299499
+Tajikistan,762,2005,280466
+Tajikistan,762,2010,279808
+Tajikistan,762,2015,275101
+Tajikistan,762,2020,276031
+Tajikistan,762,2024,276777
+Thailand,764,1990,287933
+Thailand,764,1995,271568
+Thailand,764,2000,771234
+Thailand,764,2005,1705845
+Thailand,764,2010,2640454
+Thailand,764,2015,2853248
+Thailand,764,2020,3015007
+Thailand,764,2024,3179399
+Togo,768,1990,84844
+Togo,768,1995,101583
+Togo,768,2000,137968
+Togo,768,2005,204219
+Togo,768,2010,255564
+Togo,768,2015,277384
+Togo,768,2020,279936
+Togo,768,2024,281994
+Tokelau*,772,1990,360
+Tokelau*,772,1995,506
+Tokelau*,772,2000,712
+Tokelau*,772,2005,1003
+Tokelau*,772,2010,1128
+Tokelau*,772,2015,1185
+Tokelau*,772,2020,1238
+Tokelau*,772,2024,1282
+Tonga,776,1990,2911
+Tonga,776,1995,3274
+Tonga,776,2000,3684
+Tonga,776,2005,4301
+Tonga,776,2010,4607
+Tonga,776,2015,3954
+Tonga,776,2020,3742
+Tonga,776,2024,3581
+Trinidad and Tobago,780,1990,50666
+Trinidad and Tobago,780,1995,45994
+Trinidad and Tobago,780,2000,41753
+Trinidad and Tobago,780,2005,44812
+Trinidad and Tobago,780,2010,48226
+Trinidad and Tobago,780,2015,50021
+Trinidad and Tobago,780,2020,78849
+Trinidad and Tobago,780,2024,113478
+United Arab Emirates,784,1990,1302298
+United Arab Emirates,784,1995,1795514
+United Arab Emirates,784,2000,2373577
+United Arab Emirates,784,2005,3218730
+United Arab Emirates,784,2010,5446000
+United Arab Emirates,784,2015,6859000
+United Arab Emirates,784,2020,7184000
+United Arab Emirates,784,2024,8157000
+Tunisia,788,1990,37984
+Tunisia,788,1995,37867
+Tunisia,788,2000,36719
+Tunisia,788,2005,35040
+Tunisia,788,2010,43172
+Tunisia,788,2015,56532
+Tunisia,788,2020,60145
+Tunisia,788,2024,63201
+Türkiye,792,1990,1159415
+Türkiye,792,1995,1220898
+Türkiye,792,2000,1279019
+Türkiye,792,2005,1345188
+Türkiye,792,2010,1420433
+Türkiye,792,2015,3750982
+Türkiye,792,2020,6580295
+Türkiye,792,2024,7083501
+Turkmenistan,795,1990,306500
+Turkmenistan,795,1995,273565
+Turkmenistan,795,2000,219067
+Turkmenistan,795,2005,213053
+Turkmenistan,795,2010,197979
+Turkmenistan,795,2015,196376
+Turkmenistan,795,2020,194920
+Turkmenistan,795,2024,193763
+Turks and Caicos Islands*,796,1990,5062
+Turks and Caicos Islands*,796,1995,7039
+Turks and Caicos Islands*,796,2000,9015
+Turks and Caicos Islands*,796,2005,13115
+Turks and Caicos Islands*,796,2010,17216
+Turks and Caicos Islands*,796,2015,22723
+Turks and Caicos Islands*,796,2020,25748
+Turks and Caicos Islands*,796,2024,28455
+Tuvalu,798,1990,318
+Tuvalu,798,1995,263
+Tuvalu,798,2000,218
+Tuvalu,798,2005,209
+Tuvalu,798,2010,220
+Tuvalu,798,2015,230
+Tuvalu,798,2020,239
+Tuvalu,798,2024,246
+Uganda,800,1990,560570
+Uganda,800,1995,666211
+Uganda,800,2000,624296
+Uganda,800,2005,637596
+Uganda,800,2010,515055
+Uganda,800,2015,823181
+Uganda,800,2020,1776038
+Uganda,800,2024,2057759
+Ukraine*,804,1990,6892920
+Ukraine*,804,1995,6172338
+Ukraine*,804,2000,5527087
+Ukraine*,804,2005,5050302
+Ukraine*,804,2010,4818767
+Ukraine*,804,2015,4915142
+Ukraine*,804,2020,4997387
+Ukraine*,804,2024,5064173
+North Macedonia,807,1990,95142
+North Macedonia,807,1995,109343
+North Macedonia,807,2000,125665
+North Macedonia,807,2005,127667
+North Macedonia,807,2010,129701
+North Macedonia,807,2015,130730
+North Macedonia,807,2020,131311
+North Macedonia,807,2024,150902
+Egypt,818,1990,144713
+Egypt,818,1995,160802
+Egypt,818,2000,179364
+Egypt,818,2005,288944
+Egypt,818,2010,323177
+Egypt,818,2015,499292
+Egypt,818,2020,602472
+Egypt,818,2024,1139820
+United Kingdom*,826,1990,3664896
+United Kingdom*,826,1995,4173053
+United Kingdom*,826,2000,4747902
+United Kingdom*,826,2005,5989992
+United Kingdom*,826,2010,7713303
+United Kingdom*,826,2015,9071431
+United Kingdom*,826,2020,10520870
+United Kingdom*,826,2024,11845479
+Channel Islands*,830,1990,61660
+Channel Islands*,830,1995,60519
+Channel Islands*,830,2000,64301
+Channel Islands*,830,2005,70941
+Channel Islands*,830,2010,77581
+Channel Islands*,830,2015,82307
+Channel Islands*,830,2020,84087
+Channel Islands*,830,2024,85539
+Isle of Man*,833,1990,34769
+Isle of Man*,833,1995,36886
+Isle of Man*,833,2000,39002
+Isle of Man*,833,2005,41475
+Isle of Man*,833,2010,43447
+Isle of Man*,833,2015,42238
+Isle of Man*,833,2020,43040
+Isle of Man*,833,2024,43693
+United Republic of Tanzania,834,1990,574025
+United Republic of Tanzania,834,1995,1106043
+United Republic of Tanzania,834,2000,949600
+United Republic of Tanzania,834,2005,771153
+United Republic of Tanzania,834,2010,309847
+United Republic of Tanzania,834,2015,384567
+United Republic of Tanzania,834,2020,426017
+United Republic of Tanzania,834,2024,462371
+United States of America*,840,1990,23266147
+United States of America*,840,1995,28525723
+United States of America*,840,2000,34806848
+United States of America*,840,2005,39545828
+United States of America*,840,2010,43947211
+United States of America*,840,2015,47942986
+United States of America*,840,2020,50471028
+United States of America*,840,2024,52375047
+United States Virgin Islands*,850,1990,51970
+United States Virgin Islands*,850,1995,54241
+United States Virgin Islands*,850,2000,56611
+United States Virgin Islands*,850,2005,56647
+United States Virgin Islands*,850,2010,56684
+United States Virgin Islands*,850,2015,56721
+United States Virgin Islands*,850,2020,56753
+United States Virgin Islands*,850,2024,56779
+Burkina Faso,854,1990,349652
+Burkina Faso,854,1995,464104
+Burkina Faso,854,2000,520363
+Burkina Faso,854,2005,597658
+Burkina Faso,854,2010,674438
+Burkina Faso,854,2015,704676
+Burkina Faso,854,2020,723989
+Burkina Faso,854,2024,739820
+Uruguay,858,1990,98116
+Uruguay,858,1995,93428
+Uruguay,858,2000,88874
+Uruguay,858,2005,82317
+Uruguay,858,2010,76303
+Uruguay,858,2015,78799
+Uruguay,858,2020,108267
+Uruguay,858,2024,160064
+Uzbekistan,860,1990,1653000
+Uzbekistan,860,1995,1512577
+Uzbekistan,860,2000,1406498
+Uzbekistan,860,2005,1329932
+Uzbekistan,860,2010,1220149
+Uzbekistan,860,2015,1170873
+Uzbekistan,860,2020,1162007
+Uzbekistan,860,2024,1154963
+Venezuela (Bolivarian Republic of),862,1990,1025009
+Venezuela (Bolivarian Republic of),862,1995,1019996
+Venezuela (Bolivarian Republic of),862,2000,1013738
+Venezuela (Bolivarian Republic of),862,2005,1076474
+Venezuela (Bolivarian Republic of),862,2010,1347347
+Venezuela (Bolivarian Republic of),862,2015,1404448
+Venezuela (Bolivarian Republic of),862,2020,1324193
+Venezuela (Bolivarian Republic of),862,2024,1263304
+Wallis and Futuna Islands*,876,1990,1402
+Wallis and Futuna Islands*,876,1995,1704
+Wallis and Futuna Islands*,876,2000,2015
+Wallis and Futuna Islands*,876,2005,2191
+Wallis and Futuna Islands*,876,2010,2111
+Wallis and Futuna Islands*,876,2015,2050
+Wallis and Futuna Islands*,876,2020,2040
+Wallis and Futuna Islands*,876,2024,2032
+Samoa,882,1990,3357
+Samoa,882,1995,4694
+Samoa,882,2000,5998
+Samoa,882,2005,5746
+Samoa,882,2010,5122
+Samoa,882,2015,4255
+Samoa,882,2020,4021
+Samoa,882,2024,3843
+Yemen,887,1990,118863
+Yemen,887,1995,136515
+Yemen,887,2000,144940
+Yemen,887,2005,171871
+Yemen,887,2010,288394
+Yemen,887,2015,379882
+Yemen,887,2020,387113
+Yemen,887,2024,392997
+Zambia,894,1990,279463
+Zambia,894,1995,244338
+Zambia,894,2000,343703
+Zambia,894,2005,252895
+Zambia,894,2010,149962
+Zambia,894,2015,132107
+Zambia,894,2020,187955
+Zambia,894,2024,249205
+Australia/New Zealand,927,1990,4517870
+Australia/New Zealand,927,1995,4810557
+Australia/New Zealand,927,2000,5075813
+Australia/New Zealand,927,2005,5735938
+Australia/New Zealand,927,2010,6836784
+Australia/New Zealand,927,2015,7865257
+Australia/New Zealand,927,2020,8948750
+Australia/New Zealand,927,2024,9579393
