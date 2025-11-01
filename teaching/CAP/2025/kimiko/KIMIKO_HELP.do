@@ -12,12 +12,18 @@
 
 capture mkdir CAPSTONE_DATA
 cd CAPSTONE_DATA
+capture mkdir shape_data
 cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_DATA.do KIMIKO_DATA.do, replace
 cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_GRAPHS.do KIMIKO_GRAPHS.do, replace
 cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_2025.dta KIMIKO_2025.dta, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wd.dta shape_data/wd.dta, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wdcoord.dta shape_data/wdcoord.dta, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.shp shape_data/WB_countries_Admin0_10m.shp, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.dbf shape_data/WB_countries_Admin0_10m.dbf, replace
 
 
 do KIMIKO_GRAPHS
+cd ..
 
 if c(os)=="Windows" {
 display "WINDOWS OS detected"
