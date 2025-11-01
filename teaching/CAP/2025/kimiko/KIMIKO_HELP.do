@@ -12,9 +12,9 @@
 
 capture mkdir CAPSTONE_DATA
 cd CAPSTONE_DATA
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_DATA.do KIMIKO_DATA.do
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_GRAPHS.do KIMIKO_GRAPHS.do
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_2025.dta KIMIKO_2025.dta
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_DATA.do KIMIKO_DATA.do, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_GRAPHS.do KIMIKO_GRAPHS.do, replace
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_2025.dta KIMIKO_2025.dta, replace
 
 
 do KIMIKO_GRAPHS
