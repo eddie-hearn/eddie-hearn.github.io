@@ -11,9 +11,9 @@
 *  ****************************************************************  *
 
 capture mkdir CAPSTONE_DATA
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_DATA.do
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_GRAPHS.do
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_2025.dta
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_DATA.do KIMIKO_DATA.do
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_GRAPHS.do KIMIKO_GRAPHS.do
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_2025.dta KIMIKO_2025.dta
 
 cd CAPSTONE_DATA
 do KIMIKO_GRAPHS
