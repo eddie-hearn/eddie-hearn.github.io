@@ -22,6 +22,10 @@ cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countrie
 cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.dbf shape_data/WB_countries_Admin0_10m.dbf, replace
 
 
+capture ssc install spmap
+capture ssc install shp2dta
+capture ssc install mif2dta
+
 do KIMIKO_GRAPHS
 cd ..
 
