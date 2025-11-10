@@ -4,7 +4,7 @@
 *     Author:      Eddie Hearn                                       *
 *     Purpose:     Kimiko 2025 (regression)                          *
 *     Input File:  KIMIKO_2025.dta                                   *
-*     Outputfile: transparency.png, efficiency.png, scap.png         *
+*     Outputfile:  myreg.doc                                         *
 *     Program:	   Stata 19.5                                        *
 *     OS:		   Debian GNU/Linux                                  *
 *  ****************************************************************  *
@@ -14,17 +14,20 @@ capture ssc install outreg2
 
 if c(os)=="Windows" {
 display "Kimiko detected"
+display "moving to working directory"
 cd C:\Users\ilove\FinalThesis
+display "downloading do file"
+cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/KIMIKO_REG.do KIMIKO_REG.do, replace 
 }
 
 use KIMIKO_2025.dta
 
-rename efficiency capacity
-rename dummy_income1 wealthy
-rename dummy_income2 low
-rename dummy_income3 low_mid
-rename dummy_income4 high_mid
-
+*** changinging variable names if not done already
+capture rename efficiency capacity
+capture rename dummy_income1 wealthy
+capture rename dummy_income2 low
+capture rename dummy_income3 low_mid
+capture rename dummy_income4 high_mid
 save, replace
 
 
