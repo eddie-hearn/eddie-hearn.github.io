@@ -11,7 +11,12 @@
 *  ****************************************************************  *
 
 capture ssc install outreg2
+
+if c(os)=="Windows" {
+display "Kimiko detected"
 cd C:\Users\ilove\FinalThesis
+}
+
 use KIMIKO_2025.dta
 
 rename efficiency capacity
