@@ -18,7 +18,7 @@ import os
 import numpy as np
 
 # move to working directory
-os.chdir(C:/Users/mtgro/CAPSTONE_DATA/python)
+os.chdir("C:/Users/mtgro/CAPSTONE_DATA/python")
 
 		
 #### LOAD DATA USING PANDAS
