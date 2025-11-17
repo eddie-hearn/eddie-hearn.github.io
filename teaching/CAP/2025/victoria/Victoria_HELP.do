@@ -32,3 +32,5 @@ if c(os)=="Windows" {
 display "WINDOWS OS detected"
 capture winexec explorer.exe CAPSTONE_DATA
 }
+
+cd CAPSTONE_DATA/stata
