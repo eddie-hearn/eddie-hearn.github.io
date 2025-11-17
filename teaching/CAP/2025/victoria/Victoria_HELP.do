@@ -15,7 +15,6 @@ display "Victoria detected"
 }
 
 capture mkdir CAPSTONE_DATA
-cd CAPSTONE_DATA
 capture mkdir CAPSTONE_DATA/stata
 capture mkdir CAPSTONE_DATA/python
 capture mkdir CAPSTONE_DATA/stata/graphs
