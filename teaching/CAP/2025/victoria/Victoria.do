@@ -21,13 +21,16 @@ import delimit results.csv, clear
 
 **** First lets makes some grapsh of the distribution of our variables 
 
-catplot con, intensity(25)  title("Political Ideology (Conservative)")
+catplot, over( con ) blabel(bar, pos(base)) intensity(25)  title("Political Ideology (Conservative)")
 graph export graphs/ideology.png, replace
 
+ds
+local myvarlist = "`r(varlist)'"
+local total : word count `myvarlist'
 
 forvalues i = 1/`total' {
         local xvar : word `i' of `myvarlist'
-        catplot `xvar', title("`xvar'") intensity(25) 
+        catplot, over( `xvar' ) blabel(bar, pos(base)) intensity(25)  title("`xvar'") recast(bar)
         graph export "graphs/`xvar'.png", replace
                 }
 
