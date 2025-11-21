@@ -4,7 +4,7 @@
 *     Author:      Eddie Hearn                                       *
 *     Purpose:     Victoria 2025 (analysis)                          *
 *     Input File:  results.csv                                       *                                             
-*     Outputfile:         *
+*     Outputfile:                                                    *
 *     Program:	   Stata 19.5                                        *
 *     OS:		   Debian GNU/Linux                                  *
 *  ****************************************************************  *
