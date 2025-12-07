@@ -25,7 +25,7 @@ graph export HELP/my_graph.png, replace
 graph close
 
 reg gdppc literacy
-etable, title("GDP Percapita vs literacy") export(my_reg.docx, replace)
+etable, title("GDP Percapita vs literacy") export(Help/my_reg.docx, replace)
 
 clear
 
