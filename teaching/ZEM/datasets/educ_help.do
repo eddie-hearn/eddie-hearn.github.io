@@ -20,12 +20,12 @@ else {
 
 use educ, clear
 
-twoway (scatter gdppc literacy) (lfit gdppc literacy), xtitle("GDP per capita") ytitle("Literacy") title("Literacy and Economic Growth")
+twoway (scatter gdppc literacy) (lfit gdppc literacy), ytitle("GDP per capita") xtitle("Literacy") title("Literacy and Development") legend(off)
 graph export HELP/my_graph.png, replace
 graph close
 
 reg gdppc literacy
-etable, title("GDP Percapita vs literacy") export(Help/my_reg.docx, replace)
+etable, title("Literacy and Devolopment") export(HELP/my_reg.docx, replace)
 
 clear
 

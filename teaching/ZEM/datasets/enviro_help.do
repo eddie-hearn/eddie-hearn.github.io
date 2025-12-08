@@ -1,25 +1,48 @@
-
-capture ssc install spmap
-capture ssc install shp2dta
-capture ssc install mif2dta
-
-
 capture mkdir ZEMI
 capture mkdir ZEMI/ENVIRO
 
-cd ZEMI/ENVIRO
-capture mkdir shape_data
+
 capture mkdir graphs
+capture mkdir HELP
 
-
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wd.dta shape_data/wd.dta, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wdcoord.dta shape_data/wdcoord.dta, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.shp shape_data/WB_countries_Admin0_10m.shp, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.dbf shape_data/WB_countries_Admin0_10m.dbf, replace
-
-
+if c(os)=="Windows" {
+display "Student detected"
+cd ZEMI/EDUC
+display "moving to working directory"
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/zem.do zem.do, replace
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/enviro.dta enviro.dta, replace
+}
+else {
+	display "Eddie Detected"
+	}
 
 
+use enviro, clear
+
+twoway (scatter pccbco2 gdppc) (lfit pccbco2 gdppc), xtitle("GDP per capita") ytitle("CO2") title("Environment and Wealth") legend(off)
+graph export HELP/my_graph.png, replace
+graph close
+
+reg pccbco2 gdppc
+etable, title("Environment and Wealth") export(HELP/my_reg.docx, replace)
+
+reg pccbco2 gdppc gdp2
+predict Y
+etable, title("Kuznets Curve") export(HELP/kuznets.docx, replace)
+twoway (scatter pccbco2 gdppc)(scatter Y gdppc), xtitle("GDP per capita") ytitle("CO2") title("Kuznets Curve") legend(off)
+graph export HELP/kuznets.png, replace
+graph close
+
+clear
+
+cls
+
+
+if c(os)=="Windows" {
+display "Student detected"
+shell attrib +h HELP
+}
+else {
+	display "Eddie Detected"
+	}
 

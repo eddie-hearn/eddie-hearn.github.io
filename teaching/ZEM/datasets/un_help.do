@@ -1,24 +1,53 @@
 
-capture ssc install spmap
-capture ssc install shp2dta
-capture ssc install mif2dta
-
-
 capture mkdir ZEMI
 capture mkdir ZEMI/UN
 
-cd ZEMI/UN
-capture mkdir shape_data
+
 capture mkdir graphs
+capture mkdir HELP
 
-
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wd.dta shape_data/wd.dta, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/wdcoord.dta shape_data/wdcoord.dta, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.shp shape_data/WB_countries_Admin0_10m.shp, replace
-cp https://eddie-hearn.github.io/teaching/CAP/2025/kimiko/shape_data/WB_countries_Admin0_10m.dbf shape_data/WB_countries_Admin0_10m.dbf, replace
-
-
+if c(os)=="Windows" {
+display "Student detected"
+cd ZEMI/EDUC
+display "moving to working directory"
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/zem.do zem.do, replace
-cp https://eddie-hearn.github.io/teaching/ZEM/datasets/un.dta un.dta, replace
+cp https://eddie-hearn.github.io/teaching/ZEM/datasets/all_collapsed.dta all_collapsed.dta, replace
+cp https://eddie-hearn.github.io/teaching/ZEM/datasets/us_speeches.dta us_speeches.dta, replace
+}
+else {
+	display "Eddie Detected"
+	}
+
+
+use all_collapsed, clear
+
+twoway (scatter neg US_share ) (lfit  neg US_share), xtitle("US Share of Global GDP") ytitle("Negative Speech") title("US Hegemony and Cooperation") legend(off)
+graph export HELP/all_graph.png, replace
+graph close
+
+reg neg US_share 
+etable, title("US Hegemony and Cooperation") export(HELP/all_reg.docx, replace)
+clear
+
+use us_speeches, clear
+
+twoway (scatter neg US_share ) (lfit  neg US_share), xtitle("US Share of Global GDP") ytitle("Negative Speech") title("US Hegemony and Cooperation") legend(off)
+graph export HELP/us_graph.png, replace
+graph close
+
+reg neg US_share 
+etable, title("US Hegemony and Cooperation") export(HELP/us_reg.docx, replace)
+clear
+
+cls
+
+
+if c(os)=="Windows" {
+display "Student detected"
+shell attrib +h HELP
+}
+else {
+	display "Eddie Detected"
+	}
 
 
