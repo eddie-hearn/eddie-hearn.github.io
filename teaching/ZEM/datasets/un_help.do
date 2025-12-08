@@ -1,23 +1,14 @@
 
 capture mkdir ZEMI
 capture mkdir ZEMI/UN
-
+cd ZEMI/UN
 
 capture mkdir graphs
 capture mkdir HELP
 
-if c(os)=="Windows" {
-display "Student detected"
-cd ZEMI/EDUC
-display "moving to working directory"
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/zem.do zem.do, replace
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/all_collapsed.dta all_collapsed.dta, replace
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/us_speeches.dta us_speeches.dta, replace
-}
-else {
-	display "Eddie Detected"
-	}
-
 
 use all_collapsed, clear
 
@@ -41,11 +32,10 @@ clear
 
 cls
 
-
 if c(os)=="Windows" {
-display "Student detected"
-shell attrib +h HELP
-}
+	display "Student detected"
+	shell attrib +h HELP
+	}
 else {
 	display "Eddie Detected"
 	}

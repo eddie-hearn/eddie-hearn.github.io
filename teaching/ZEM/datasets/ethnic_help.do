@@ -1,22 +1,13 @@
 
 capture mkdir ZEMI
 capture mkdir ZEMI/ETHNIC
-
+cd ZEMI/ETHNIC
 
 capture mkdir graphs
 capture mkdir HELP
 
-if c(os)=="Windows" {
-display "Student detected"
-cd ZEMI/EDUC
-display "moving to working directory"
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/zem.do zem.do, replace
 cp https://eddie-hearn.github.io/teaching/ZEM/datasets/ethnic_conflict.dta ethnic_conflict.dta, replace
-}
-else {
-	display "Eddie Detected"
-	}
-
 
 use ethnic_conflict, clear
 
@@ -30,11 +21,10 @@ clear
 
 cls
 
-
 if c(os)=="Windows" {
-display "Student detected"
-shell attrib +h HELP
-}
+	display "Student detected"
+	shell attrib +h HELP
+	}
 else {
 	display "Eddie Detected"
 	}
