@@ -103,3 +103,9 @@ graph export "graphs/liberal_partisan_neutral.png", replace
 
 graph bar (mean) liberal_neutral_trust (mean) conservative_neutral_trust if ideo3=="Conservative", title("Conservative Trust of Neutral Media") ytitle("Mean of Trust")  intensity(25) legend(order(1 "Liberal Neutral" 2 "Conservative Neutral"))
 graph export "graphs/conservative_partisan_neutral.png", replace
+
+graph bar (mean) liberal_neutral_trust (mean) liberal_emotional_trust if ideo3=="Liberal", title("Liberal Media Trust") ytitle("Mean of Trust")  intensity(25) legend(order(1 "Liberal Neutral" 2 "Liberal Emotional"))
+graph export "graphs/liberal_trust.png", replace
+
+graph bar (mean) conservative_neutral_trust (mean) conservative_emotional_trust if ideo3=="Liberal", title("Conservative Media Trust") ytitle("Mean of Trust")  intensity(25) legend(order(1 "Conservative Neutral" 2 "Conservative Emotional"))
+graph export "graphs/conservative_trust.png", replace
