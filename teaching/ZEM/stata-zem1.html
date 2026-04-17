@@ -68,11 +68,38 @@ file {
  border-color:#287EC7;
 }
 
+/* NEW: Python side-by-side */
+.row { display: flex; gap: 20px; }
+.col { flex: 1; }
+.python { display: none; }
+.show-python .python { display: block; }
+
+.toggle-btn {
+  padding: 6px 12px;
+  margin: 10px 0;
+  border: 1px solid #287EC7;
+  background-color: white;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background-color: #287EC7;
+  color: white;
+}
+
 </style>
+
+<script>
+function togglePython() {
+  document.body.classList.toggle('show-python');
+  document.getElementById('toggle-btn').classList.toggle('active');
+}
+</script>
+
 <header>
   <h1 align="center">Data analysis 1 (Introduction)</h1>
 </header>
 <body>
+
 <ul>
   <li><a class="active" href="seminar.html">Seminar Home</a></li>
   <li><a href="#manipulate">Manipulating directories </a></li>
@@ -80,7 +107,41 @@ file {
   <li><a href="stata-zem2.html"">Next (loops) </a></li>
 </ul>
 
+<button id="toggle-btn" class="toggle-btn" onclick="togglePython()">Show Python Side-by-Side</button>
+<p><em>Click to compare with Python equivalents</em></p>
+
+<div class="row">
+<div class="col">
+<h2>Stata users</h2>
+<p><strong>How to open Stata:</strong></p>
+<p>
+Mac: Press <code>Command + Space</code>, type <code>Stata</code>, press Enter<br>
+Windows: Press <code>Windows Key</code>, type <code>Stata</code>, press Enter
+</p>
+</div>
+<div class="col python">
+<h2>Python users</h2>
+<p><strong>How to open the terminal:</strong></p>
+<p>
+Mac: Press <code>Command + Space</code>, type <code>Terminal</code>, press Enter<br>
+Windows: Press <code>Windows Key</code>, type <code>PowerShell</code>, press Enter</p>
+<p><em>Python runs inside this environment.</em></p>
+</div>
+</div>
+
+
+
+
+
+
 <h1 id="manipulate"> Manipulating directories</h1>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">
+&nbsp &nbsp <code>pwd</code> <br>
+&nbsp &nbsp <code>ls</code> <br>
+&nbsp &nbsp <code>cd</code> zemi <br>
+&nbsp &nbsp <code>mkdir</code> zemi
+</p>
 
 <table border="0" WIDTH="100%" >
     <TR ALIGN="left">
@@ -106,25 +167,68 @@ file {
 
 </table>
 <p>To check your working directory just type: </p>
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>pwd</code> &nbsp &nbsp </p> <mark>Press "enter" to run the command after each line.</mark>
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>pwd</code> &nbsp &nbsp </p>
+</div>
+</div>
 
 <p>Let's move to the home directory and print the working directory. Type:</p>
+
+<div class="row">
+<div class="col">
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>cd</code> ~/ <br> &nbsp &nbsp  <code>pwd</code> </p>
+</div>
+</div>
 
 <p>Now let's make a directory called 'zemi' and move into that directory. And verify our location. Type:</p>
+
+<div class="row">
+<div class="col">
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>mkdir</code> zemi <br> &nbsp &nbsp  <code>cd</code> zemi <br> &nbsp &nbsp <code>pwd</code> </p>
+</div>
+</div>
 
 <h2> *** Absolute versus relative paths ***</h2>
 <p> <file>Absolute path:</file> a complete path to a file or directory from the root directory. The root directory is the top-level directory of the file system </p>
 <p> <file>Relative path:</file>: a path to a file or directory that is relative to the working directory. It specifies the location of the file or directory in relation to the working directory </p>
 
 <p>To move up 1 directory relatively: </p>
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>cd .. </code></p>
 
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>cd ..</code> </p>
+</div>
+</div>
+
+<p>Move back into your zemi directory: </p>
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>cd zemi</code> </p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+</div>
+<div class="col python">
+<p><strong>Open Python</strong></p>
+<p>After returing to the zemi directory, open python: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>python</code> </p>
+<p>or: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>python3</code> </p>
+</div>
+</div>
 
 <h1 id="first"> Your first program</h1>
 
-<table border="0" WIDTH="100%" >
+
+
+<div class="row">
+<div class="col">
+<table border="0" WIDTH="100%">
     <TR ALIGN="left">
         <th style="width:30%"> command </th>
         <th style="width:50%"> [action] </th>
@@ -134,12 +238,62 @@ file {
         <td style="width:50%"> [ displays strings and values of scalar expressions ] </td> 
     </tr>
 </table>
+</div>
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"hello world"</file> &nbsp &nbsp </p><mark>use " " for string (words)</mark>
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> hello world  &nbsp &nbsp </p><mark>error: "hello not found"</mark>
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"2+2"</file> &nbsp &nbsp </p><mark>treated as string</mark>
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> 2+2 &nbsp &nbsp </p><mark>treated as numbers</mark>
+<div class="col python">
+<table border="0" WIDTH="100%">
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">1.5. <a href="https://www.w3schools.com/python/ref_func_print.asp"> print </a></td>
+        <td style="width:50%"> [ prints strings and values of scalar expressions ] </td> 
+    </tr>
+</table>
+</div>
+
+</div>
+
+
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"hello world"</file> &nbsp &nbsp </p>
+</div>
+<div class="col python">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"><code>print("hello world")</code></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> hello world  &nbsp &nbsp </p>
+</div>
+<div class="col python">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"><code>print(hello world)</code></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"2+2"</file> &nbsp &nbsp </p>
+</div>
+<div class="col python">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"><code>print("2+2")</code></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> 2+2 &nbsp &nbsp </p>
+</div>
+<div class="col python">
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"><code>print(2+2)</code></p>
+</div>
+</div>
 
 
 </body>
 </html>
+
