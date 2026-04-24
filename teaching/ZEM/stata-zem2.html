@@ -67,7 +67,34 @@ file {
  border-color:#287EC7;
 }
 
+/* NEW: Python side-by-side */
+.row { display: flex; gap: 20px; }
+.col { flex: 1; }
+.python { display: none; }
+.show-python .python { display: block; }
+
+.toggle-btn {
+  padding: 6px 12px;
+  margin: 10px 0;
+  border: 1px solid #287EC7;
+  background-color: white;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background-color: #287EC7;
+  color: white;
+}
+
 </style>
+
+
+<script>
+function togglePython() {
+  document.body.classList.toggle('show-python');
+  document.getElementById('toggle-btn').classList.toggle('active');
+}
+</script>
+
 <header>
   <h1 align="center">Data analysis 2 (Basic loop)</h1>
 </header>
@@ -82,8 +109,14 @@ file {
   <li><a href="stata-zem3.html"">Next (Do-files) </a></li>
 </ul>
 
+<button id="toggle-btn" class="toggle-btn" onclick="togglePython()">Show Python Side-by-Side</button>
+<p><em>Click to compare with Python equivalents</em></p>
+
+
 <h1 id="macros">Macros </h1> 
 
+<div class="row">
+<div class="col">
 <table border="0" WIDTH="100%" >
     <TR ALIGN="left">
         <th style="width:30%"> command </th>
@@ -110,22 +143,102 @@ file {
         <td style="width:50%"> [ executes command for each element of <em>macro</em> ] </td> 
     </tr>
 </table>
+</div>
+<div class="col python">
+<table border="0" WIDTH="100%">
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.1. <a href="https://www.w3schools.com/PYTHON/ref_keyword_import.asp"> import </a></td>
+        <td style="width:50%"> [ imports a module ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.2. <a href="https://www.w3schools.com/python/ref_module_time.asp"> sleep() </a></td>
+        <td style="width:50%"> [ wait <em>seconds</em> before executing next command  ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.3. <a href="https://www.w3schools.com/python/ref_keyword_while.asp"> while </a></td>
+        <td style="width:50%"> [ A while loop will continue until the statement is false ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.4. <a href="https://www.w3schools.com/python/ref_keyword_for.asp"> for </a></td>
+        <td style="width:50%"> [ can be used to iterate through a sequence ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">2.5. <a href="https://www.w3schools.com/python/ref_func_range.asp"> range() </a></td>
+        <td style="width:50%"> [returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+</table>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
 <p>Make a local macro using a string (words): </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> name <file>"John"</file></p>
+</div>
+<div class="col python">
+<p>Make a local macro using a string (words): </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp name=<file>"John"</file></p>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
 <p>Print local macro "name": </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"`name'"</file></p>
+</div>
+<div class="col python">
+<p>Print local macro "name":</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp <code>print(<file>name</file>)</code></p>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
 <p>Make a local macro using numbers: </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> age = 31</p>
+</div>
+<div class="col python">
+<p>Make a local macro using numbers:</p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp age=31</p>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
 <p>Print local macro age: </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>`age'</file></p>
+</div>
+<div class="col python">
+<p>Print local macro age: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp <code>print(<file>age</file>)</code></p>
+</div>
+</div>
 
-<p>Print both local macro: </p>
+<div class="row">
+<div class="col">
+<p>Print both local macros: </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>display</code> <file>"`name' is `age' years old"</file></p>
+</div>
+<div class="col python">
+<p>Print both local macros: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp <code>print(<file>name, "is", age, "years old"</file>)</code></p>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
+</div>
+<div class="col python">
+<p><strong>Load Time Module</strong></p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp  &nbsp  <code>from</code> <file>time</file> <code>import</code> <file>sleep</file> </p>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
 <h2 id="true">Basic loop using while true</h2>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local i = 1 </code> </p> <mark>counter set to 1</mark>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>while</code>  <file>`i'</file>< 10 {  <br>
@@ -133,20 +246,52 @@ file {
 &nbsp &nbsp<code> local</code> i = <file>`i'</file>+ 1<br>
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
-    
+</div>
+<div class="col python">
+<h2 id="true">Basic loop using while true</h2>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;">  <code>i=1 </code> </p> <mark>counter set to 1</mark>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> <code>while</code>  <file>i</file> < 11:  <br>
+&nbsp &nbsp<code> print(<file>"hello world", i</file>)</code> <br>
+&nbsp &nbsp<code> i</code> += 1<br>
+&nbsp &nbsp<code> sleep(1)</code> <br>
+</div>
+</div>
+
+<div class="row">
+<div class="col">   
 <h2 id="values">Basic loop using forvalues</h2>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>forvalues</code>  i = 1/10 {  <br>
 &nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
+</div>
+<div class="col python">
+<h2 id="true">Basic loop using for</h2>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> <code>for</code>  <file>i</file> <code>in range(10)</code>:  <br>
+&nbsp &nbsp<code> print(<file>"hello world", i</file>)</code> <br>
+&nbsp &nbsp<code> sleep(1)</code> <br>
+</div>
+</div>
 
+<div class="row">
+<div class="col">   
 <p>Counting by 2: </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>forvalues</code>  i = 1(2)10 {  <br>
 &nbsp &nbsp<code> display</code> <file>"hello world `i'"</file><br>
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
+</div>
+<div class="col python">
+<p>Counting by 2: </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> <code>for</code>  <file>i</file> <code>in range(1, 12, 2)</code>:  <br>
+&nbsp &nbsp<code> print(<file>"hello world", i</file>)</code> <br>
+&nbsp &nbsp<code> sleep(1)</code> <br>
+</div>
+</div>
 
-<h2 id="each">Basic loop using foreach</h2>
+<div class="row">
+<div class="col">   
+<h2 id="each">Basic loop over list</h2>
 <p>Create list of juice </p>
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>local</code> juice <file>"apple orange grape"</file></p>
 <p>loop over each element of list "juice" </p>
@@ -154,6 +299,17 @@ file {
 &nbsp &nbsp<code> display</code> <file>"`i' juice"</file><br>
 &nbsp &nbsp<code> sleep</code> 1000<br>
 &nbsp &nbsp }</p>
+</div>
+<div class="col python">
+<h2 id="each">Basic loop over list</h2>
+<p>Create list of juice </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> juice = <file>["apple", "orange", "grape"]</file>  <br>
+<p>loop over each element of list "juice" </p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> <code>for</code>  <file>i</file> <code>in juice</code>:  <br>
+&nbsp &nbsp<code> print(<file>i, "juice"</file>)</code> <br>
+&nbsp &nbsp<code> sleep(1)</code> <br>
+</div>
+</div>
 
 </body>
 </html>
