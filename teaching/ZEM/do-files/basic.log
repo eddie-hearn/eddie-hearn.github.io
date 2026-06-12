@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /home/eddie/HDD/eddie-hearn.github.io/teaching/ZEM/do-files/basic.
+> log
+  log type:  text
+ opened on:  12 Jun 2026, 13:35:03
+
+. 
+. *     ***************************************************************** *
+. *     ***************************************************************** *
+. *     File-Name:   basic.do                                             *
+. *     Date:        May 31, 2024                                         *
+. *     Author:      Eddie Hearn                                          *
+. *     Purpose:     Seminar                                              *
+. *     Input File:  none                                                 *
+. *     Output File: none                                                 *
+. *     Data Output: none                                                 *
+. *     Program:     Stata 18                                             *
+. *     Machine:     Linux-home                                           *
+. *     ****************************************************************  *
+. *     ****************************************************************  *
+. 
+. local juice "apple orange grape" /* Create a list of juices */
+
+. 
+. *** Run loop over each type of juice ***
+. foreach i in `juice' {
+  2.     display "`i' juice" 
+  3. }
+apple juice
+orange juice
+grape juice
+
+.     
+. log close
+      name:  <unnamed>
+       log:  /home/eddie/HDD/eddie-hearn.github.io/teaching/ZEM/do-files/basic.
+> log
+  log type:  text
+ closed on:  12 Jun 2026, 13:35:03
+-------------------------------------------------------------------------------

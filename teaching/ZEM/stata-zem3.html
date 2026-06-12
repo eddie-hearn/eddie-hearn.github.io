@@ -65,7 +65,33 @@ file {
  border-color:#287EC7;
 }
 
+/* NEW: Python side-by-side */
+.row { display: flex; gap: 20px; }
+.col { flex: 1; }
+.python { display: none; }
+.show-python .python { display: block; }
+
+.toggle-btn {
+  padding: 6px 12px;
+  margin: 10px 0;
+  border: 1px solid #287EC7;
+  background-color: white;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background-color: #287EC7;
+  color: white;
+}
+
 </style>
+
+<script>
+function togglePython() {
+  document.body.classList.toggle('show-python');
+  document.getElementById('toggle-btn').classList.toggle('active');
+}
+</script>
+
 <header>
   <h1 align="center">Data analysis 3 (Do-files)</h1>
 </header>
@@ -77,8 +103,14 @@ file {
   <li><a href="stata-zem4.html"">Next (Loading data) </a></li>
 </ul>
 
+<button id="toggle-btn" class="toggle-btn" onclick="togglePython()">Show Python Side-by-Side</button>
+<p><em>Click to compare with Python equivalents</em></p>
+
+
 <h1>3. Do-files </h1> 
 
+<div class="row">
+<div class="col">
 <table border="0" WIDTH="100%" >
     <TR ALIGN="left">
         <th style="width:30%"> command </th>
@@ -97,8 +129,34 @@ file {
         <td style="width:50%"> [ opens do-file editor ] </td> 
     </tr>
 </table>
+</div>
+<div class="col python">
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.1.  python3 <em>filename</em> </td>
+        <td style="width:50%"> [ runs commands in script.py ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.2. log_file = open("filename.log", "w") </td>
+        <td style="width:50%"> [ opens writable log file ] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">3.3. sys.stdout = log_file </td>
+        <td style="width:50%"> [ redirects output to log_file ] </td> 
+    </tr>
+</table>
+</div>
+</div>
 
-<p> Do-files are are text files that contain commands that can be executed by Stata (they end with .do). There are 3 ways you can use Stata. First, you can use the drop down menus. This may seem easier when you are beginning but there are a lot of limitations to this method. Second, you can enter commands directly into the command prompt has we have been doing in class. The third and prefered way, however, is to use a do-file. A do-file allows you to reproduce your work in the future. It also means you don't have to start from scratch each time you open Stata. You can save your do-file close Stata and go home without worrying about losing your progress.</p>
+<div class="row">
+<div class="col">
+<h2>Stata users</h2>
+<p>
+Do-files are are text files that contain commands that can be executed by Stata (they end with .do). There are 3 ways you can use Stata. First, you can use the drop down menus. This may seem easier when you are beginning but there are a lot of limitations to this method. Second, you can enter commands directly into the command prompt has we have been doing in class. The third and prefered way, however, is to use a do-file. A do-file allows you to reproduce your work in the future. It also means you don't have to start from scratch each time you open Stata. You can save your do-file close Stata and go home without worrying about losing your progress.</p>
 
 <p> You can create a do-file using any text editor on your computer or you can use the built-in do-file editor in Stata (ctrl+9 or command <code>doedit</code>)</p>
 
@@ -113,12 +171,24 @@ file {
 
 <p> Stata also allows you to keep a log of your session. It is good practice to start each do-file by opening a log. </p>
 
-<p> Here is an example of a <a href="https://eddie-hearn.github.io/teaching/ZEM/do-files/basic.do">basic do-file</a>. After looking at this example, make your own do-file. Make sure you include a log-file, comments, and some commands. Also, remember to close your log file after you're finished. After you run your do-file, make sure you can find the log-file Stata produced. It will be in your working directory.</p>
+<p> Here is an example of a <a href="https://eddie-hearn.github.io/teaching/ZEM/do-files/basic.do">basic do-file</a>. After looking at this example, make your own do-file. Make sure you include a log-file, comments, and some commands. Also, remember to close your log file after you're finished. After you run your do-file, make sure you can find the log-file Stata produced. It will be in your working directory.
+</p>
+</div>
+<div class="col python">
+<h2>Python users</h2>
+<p> Python scripts are are text files that contain commands that can be executed by python (they end with .py). There are 3 ways you can use python. First, you can run code directly in the terminal as we have been doing. Second, you can use an integrated development environment (IDE). The third and prefered way, however, is to use a script file. A scipt file allows you to reproduce your work in the future. It also means you don't have to start from scratch each time you open python. You can save your script file and go home without worrying about losing your progress.</p>
 
+<p> You can create a script file using any text editor on your computer or you can use a specialized IDE.</p>
 
+<p> When you use a scipt file it is important that you provide clear infomration about the script's purpose. It is also important that you use relative file paths. If you use absolute file paths your file may not run on a diffrent computer. Finally, make sure you include comments so you can remember why you included specific commands and so that others can follow what you are doing. </p>
 
+<p> You can comment in python using a #. This means that python will ignore items after # when running the commands.</p>
 
+<p> Python also allows you to keep a log of your session. It is good practice to start each  script file by opening a log. </p>
 
+<p> Here is an example of a <a href="https://eddie-hearn.github.io/teaching/ZEM/do-files/basic.py">basic scipt-file</a>. After looking at this example, make your own script file. Make sure you include a log-file, comments, and some commands. Also, remember to close your log file after you're finished. After you run your script, make sure you can find the log-file Stata produced. It will be in your working directory.</p>
+</div>
+</div
 
 </body>
 </html>
