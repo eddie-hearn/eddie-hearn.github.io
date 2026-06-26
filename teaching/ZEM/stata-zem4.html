@@ -65,7 +65,33 @@ file {
  border-color:#287EC7;
 }
 
+/* NEW: Python side-by-side */
+.row { display: flex; gap: 20px; }
+.col { flex: 1; }
+.python { display: none; }
+.show-python .python { display: block; }
+
+.toggle-btn {
+  padding: 6px 12px;
+  margin: 10px 0;
+  border: 1px solid #287EC7;
+  background-color: white;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  background-color: #287EC7;
+  color: white;
+}
+
 </style>
+
+<script>
+function togglePython() {
+  document.body.classList.toggle('show-python');
+  document.getElementById('toggle-btn').classList.toggle('active');
+}
+</script>
+
 <header>
   <h1 align="center">Data analysis 4 (Loading Data)</h1>
 </header>
@@ -77,8 +103,14 @@ file {
   <li><a href="stata-zem5.html"">Next (Recoding variables) </a></li>
 </ul>
 
+<button id="toggle-btn" class="toggle-btn" onclick="togglePython()">Show Python Side-by-Side</button>
+<p><em>Click to compare with Python equivalents</em></p>
+
+
 <h1>4. Loading data </h1> 
 
+<div class="row">
+<div class="col">
 <table border="0" WIDTH="100%" >
     <TR ALIGN="left">
         <th style="width:30%"> command </th>
@@ -97,7 +129,40 @@ file {
         <td style="width:50%"> [ loads an Excel data file and sets the row to used as variable names (often first) ] </td> 
     </tr>
 </table>
+</div>
+<div class="col python">
+<table border="0" WIDTH="100%" >
+    <TR ALIGN="left">
+        <th style="width:30%"> command </th>
+        <th style="width:50%"> [action] </th>
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.1.  import <em>pandas</em>  as pd</td>
+        <td style="width:50%"> [ imports pandas library as pd] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.2.  df = pd.read_csv('file.csv')</td>
+        <td style="width:50%"> [ loads csv into a dataframe "df"] </td> 
+    </tr>
+        <TR ALIGN="left">
+        <td style="width:30%">4.3.  df = pd.read_stata('file.dta')</td>
+        <td style="width:50%"> [ loads stata data into a dataframe "df"] </td> 
+    </tr>
+        <TR ALIGN="left">
+        <td style="width:30%">4.4.  df = pd.read_excel('file.xlsx')</td>
+        <td style="width:50%"> [ loads excel data into a dataframe "df"] </td> 
+    </tr>
+    <TR ALIGN="left">
+        <td style="width:30%">4.5. df </td>
+        <td style="width:50%"> [ View the first 5 rows of df ] </td> 
+    </tr>
+</table>
+</div>
+</div>
 
+<div class="row">
+<div class="col">
+<h2>Stata users</h2>
 <p>Now that you know how to use Stata the next step is loading data. We will focus on the 3 most common types of data you will encounter. </p>
 
 <p>&emsp;&emsp;&#8226; Stata formatted data (.dta files) <br>
@@ -108,13 +173,13 @@ file {
 
 <p> The most difficult part of loading data is understanding your working directory and the path to the data. In order for your do-file to work on different machines it is important to use relative paths to open files. Let's download some data files into your working directory. Type:
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>do</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/do-files/loading_data" </file></p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>cp</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/data/births-per.csv" births-per.csv</file></p>
 
-<p> This will run the do-file <file>"loading-data"</file> which will place some data files on your computer in a new working directory name <file>"data"</file>. The directory will open automatically in a window so you can verify the files are on your computer. You can also check your working directory in Stata with the command <code>pwd</code> and view available files with the command <code>ls</code>. </p>
+<p> This will copy the data file on your computer in your working directory. You can check your working directory in Stata with the command <code>pwd</code> and view available files with the command <code>ls</code>. </p>
 
-<p> The easiest file to open is a Stata formatted .dta file. You simply use the <code>use</code> command and the <em>filename</em>. You do not need to type .dta as that is the default extension.  </p>
+<p> The easiest file to open is a Stata formatted .dta file. You simply use the <code>use</code> command and the <em>filename</em>. You do not need to type .dta as that is the default extension.  You can open files online or on your computer</p>
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>use</code> <file>births-per </file></p>
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>use</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/data/births-per" </file></p>
 
 <h2> *** If there are spaces in your filename, you need to put it inside " " ***</h2>
 
@@ -125,10 +190,40 @@ file {
 <p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>clear</code> <br>
 &nbsp &nbsp  <code>import</code> delim <file>births-per.csv </file></p>
 
-<p>We can open the Excel file (.xlsx) with the <code>import excel</code> command. We will also need to specify that the first row is variable names when working with an excel file.</p>
+</div>
+<div class="col python">
+<h2>Python users</h2>
+<p>Now that you know how to use python the next step is loading data. We will focus on the 3 most common types of data you will encounter using the pandas library. </p>
 
-<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>clear</code> <br>
-&nbsp &nbsp  <code>import</code> excel <file>births-per.xlsx</file>, first</p>
+<p>&emsp;&emsp;&#8226; Stata formatted data (.dta files) <br>
+     &emsp;&emsp;&#8226; Text delimited files (commonly .csv files) <br>
+     &emsp;&emsp;&#8226; Microsoft Excel files (.xlsx files) </p> 
+
+<p> Of course you can open many other types of files, but the above 3 are the most likely for you to encounter in the beginning.</p>
+
+<p> The most difficult part of loading data is understanding your working directory and the path to the data. In order for your do-file to work on different machines it is important to use relative paths to open files. Let's download some data files into your working directory. Type into your terminal using bash (not python):
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>curl -O</code> <file>"https://eddie-hearn.github.io/teaching/ZEM/data/births-per.csv" </file></p>
+
+<p> This will copy the data file on your computer in your working directory. You can check your working directory in bash with the command <code>pwd</code> and view available files with the command <code>dir or ls</code>. </p>
+
+<p> To work with a datset you must first import the pandas library. After opening python type:
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>import</code> <file>pandas as pd </file></p>
+
+<p> You can open files online or on your computer. Let's start with the csv file in your working directory.
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>df = pd.read_csv('births-per.csv')</code> </p>
+
+<h2> *** If there are spaces in your filename, you need to put it inside ' ' ***</h2>
+
+<p>If we want to open the Stata data file (.dta), we use the <code>pd.read_stata('births-per.csv')</code> command and the <em>filename</em>. </p>
+
+<p style="border-width:1px; border-style:solid; border-color:green; padding: .5em;"> &nbsp &nbsp  <code>df = pd.read_stata('https://eddie-hearn.github.io/teaching/ZEM/data/births-per.dta')</code> </p>
+
+<h2> *** Typing df will allow you to verify that the dataframe is loaded. ***</h2>
+</div>
+</div
 
 </body>
 </html>
